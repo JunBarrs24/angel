@@ -22,7 +22,7 @@
       {"prompt": "¿Qué le gustaba comer al Baryonyx?", "options": ["Hojas de árboles", "Peces del río", "Frutas dulces"], "correct_index": 1},
       {"prompt": "¿A qué animal se parecía su hocico?", "options": ["A un cocodrilo", "A un elefante", "A un conejo"], "correct_index": 0},
       {"prompt": "¿Qué tenían de especial sus manos?", "options": ["Eran muy pequeñas", "Tenían alas", "Tenían garras enormes"], "correct_index": 2},
-      {"prompt": "¿Dónde vivía el Baryonyx?", "options": ["En Inglaterra", "En México", "En China"], "correct_index": 0}
+      {"prompt": "¿Dónde vivía el Baryonyx?", "options": ["En México", "En China", "En Inglaterra"], "correct_index": 2}
     ]
   },
   {
@@ -74,7 +74,7 @@
       {"prompt": "¿Qué tenía de especial el Amargasaurio?", "options": ["Alas de colores", "Dos filas de espinas largas", "Un caparazón redondo"], "correct_index": 1},
       {"prompt": "¿En qué país vivía el Amargasaurio?", "options": ["En Argentina", "En Canadá", "En Egipto"], "correct_index": 0},
       {"prompt": "¿Qué comía el Amargasaurio?", "options": ["Peces", "Insectos", "Plantas y hojas"], "correct_index": 2},
-      {"prompt": "¿Para qué podían servirle sus espinas?", "options": ["Para verse más grande", "Para volar", "Para cavar túneles"], "correct_index": 0}
+      {"prompt": "¿Para qué podían servirle sus espinas?", "options": ["Para volar", "Para cavar túneles", "Para verse más grande"], "correct_index": 2}
     ]
   },
   {
@@ -100,7 +100,7 @@
       {"prompt": "¿Qué cubría el cuerpo del Nodosaurio?", "options": ["Plumas suaves", "Placas duras como armadura", "Escamas de pez"], "correct_index": 1},
       {"prompt": "¿Qué comía el Nodosaurio?", "options": ["Plantas bajitas", "Peces grandes", "Otros dinosaurios"], "correct_index": 0},
       {"prompt": "¿Cómo era el carácter del Nodosaurio?", "options": ["Muy peligroso", "Nervioso y asustadizo", "Tranquilo y sin prisa"], "correct_index": 2},
-      {"prompt": "¿Dónde vivía el Nodosaurio?", "options": ["En América del Norte", "En el fondo del mar", "En la Antártida"], "correct_index": 0}
+      {"prompt": "¿Dónde vivía el Nodosaurio?", "options": ["En el fondo del mar", "En la Antártida", "En América del Norte"], "correct_index": 2}
     ]
   },
   {

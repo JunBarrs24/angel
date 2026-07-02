@@ -22,7 +22,7 @@
       {"prompt": "¿Cuántos cuernos tenía el Triceratops?", "options": ["Cinco cuernos", "Un solo cuerno", "Tres cuernos"], "correct_index": 2},
       {"prompt": "¿Qué comía el Triceratops?", "options": ["Solo plantas, era herbívoro", "Carne y pescado", "Insectos pequeños"], "correct_index": 0},
       {"prompt": "¿Cómo vivía el Triceratops?", "options": ["Siempre solo", "En manadas", "Bajo el agua"], "correct_index": 1},
-      {"prompt": "¿A qué se parecía su pico?", "options": ["Al de un loro", "Al de un pato", "Al de un pez"], "correct_index": 0}
+      {"prompt": "¿A qué se parecía su pico?", "options": ["Al de un pato", "Al de un pez", "Al de un loro"], "correct_index": 2}
     ]
   },
   {
@@ -74,7 +74,7 @@
       {"prompt": "¿Qué cubría el lomo del Anquilosaurio?", "options": ["Suaves plumas", "Placas duras y bultos de hueso", "Pelo largo"], "correct_index": 1},
       {"prompt": "¿Cómo terminaba su cola?", "options": ["En una gran bola de hueso", "En punta afilada", "En forma de abanico"], "correct_index": 0},
       {"prompt": "¿Para qué usaba su cola?", "options": ["Para nadar", "Para trepar árboles", "Solo para defenderse"], "correct_index": 2},
-      {"prompt": "¿Qué comía el Anquilosaurio?", "options": ["Plantas bajitas del suelo", "Peces del río", "Insectos"], "correct_index": 0}
+      {"prompt": "¿Qué comía el Anquilosaurio?", "options": ["Peces del río", "Insectos", "Plantas bajitas del suelo"], "correct_index": 2}
     ]
   },
   {
@@ -100,7 +100,7 @@
       {"prompt": "¿Qué tenía el Espinosaurio en la espalda?", "options": ["Una gran vela de huesos", "Un caparazón duro", "Dos alas"], "correct_index": 0},
       {"prompt": "¿Cuál era su comida favorita?", "options": ["Hojas verdes", "Peces grandes", "Frutas"], "correct_index": 1},
       {"prompt": "¿A qué se parecía su hocico?", "options": ["Al de un loro", "Al de un elefante", "Al de un cocodrilo"], "correct_index": 2},
-      {"prompt": "¿Dónde pasaba mucho tiempo el Espinosaurio?", "options": ["Cerca de los ríos", "En la cima de montañas", "En cuevas oscuras"], "correct_index": 0}
+      {"prompt": "¿Dónde pasaba mucho tiempo el Espinosaurio?", "options": ["En la cima de montañas", "En cuevas oscuras", "Cerca de los ríos"], "correct_index": 2}
     ]
   },
   {
@@ -126,7 +126,7 @@
       {"prompt": "¿Qué tenía el Parasaurolophus en la cabeza?", "options": ["Una cresta larga y curva", "Tres cuernos", "Una bola de hueso"], "correct_index": 0},
       {"prompt": "¿Para qué usaba su cresta?", "options": ["Para nadar", "Para hacer sonidos como trompeta", "Para volar"], "correct_index": 1},
       {"prompt": "¿A qué se parecía su pico?", "options": ["Al de un águila", "Al de un cocodrilo", "Al de un pato"], "correct_index": 2},
-      {"prompt": "¿Cómo vivía el Parasaurolophus?", "options": ["En manadas", "Siempre solo", "Bajo el agua"], "correct_index": 0}
+      {"prompt": "¿Cómo vivía el Parasaurolophus?", "options": ["Siempre solo", "Bajo el agua", "En manadas"], "correct_index": 2}
     ]
   }
 ]

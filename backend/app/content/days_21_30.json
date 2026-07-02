@@ -59,7 +59,7 @@
       {"prompt": "¿Qué salía del collar de hueso del Styracosaurio?", "options": ["Plumas suaves", "Muchos cuernos largos y puntiagudos", "Hojas verdes"], "correct_index": 1},
       {"prompt": "¿Qué comía el Styracosaurio?", "options": ["Plantas y hojas", "Pescado fresco", "Huevos de otros dinosaurios"], "correct_index": 0},
       {"prompt": "¿Con cuántas patas caminaba?", "options": ["Con dos patas", "Volando sin patas", "Con cuatro patas fuertes"], "correct_index": 2},
-      {"prompt": "¿Para qué usaba sus cuernos, según los científicos?", "options": ["Para verse impresionante y asustar peligros", "Para cavar la tierra", "Para nadar en el mar"], "correct_index": 0}
+      {"prompt": "¿Para qué usaba sus cuernos, según los científicos?", "options": ["Para cavar la tierra", "Para nadar en el mar", "Para verse impresionante y asustar peligros"], "correct_index": 2}
     ]
   },
   {
@@ -109,7 +109,7 @@
       {"prompt": "¿Qué era el Mosasaurio?", "options": ["Un dinosaurio que volaba", "Un enorme reptil marino", "Un pez pequeño"], "correct_index": 1},
       {"prompt": "¿Qué tenía en vez de patas?", "options": ["Cuatro aletas suaves", "Ruedas", "Alas grandes"], "correct_index": 0},
       {"prompt": "¿Por qué subía a la superficie?", "options": ["Para dormir en la playa", "Para tomar el sol", "Para respirar aire"], "correct_index": 2},
-      {"prompt": "¿Qué comía el Mosasaurio?", "options": ["Peces y otros animales del mar", "Hojas y plantas", "Frutas de los árboles"], "correct_index": 0}
+      {"prompt": "¿Qué comía el Mosasaurio?", "options": ["Hojas y plantas", "Frutas de los árboles", "Peces y otros animales del mar"], "correct_index": 2}
     ]
   },
   {

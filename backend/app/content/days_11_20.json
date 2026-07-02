@@ -47,7 +47,7 @@
       {"prompt": "¿Qué tenía muy largo el Apatosaurio?", "options": ["Las orejas", "El cuello y la cola", "Los dientes"], "correct_index": 1},
       {"prompt": "¿Qué comía el Apatosaurio?", "options": ["Solo plantas", "Carne de otros dinos", "Peces del río"], "correct_index": 0},
       {"prompt": "¿Sobre cuántas patas caminaba?", "options": ["Dos patas", "Seis patas", "Cuatro patas"], "correct_index": 2},
-      {"prompt": "¿Cómo era el Apatosaurio con sus crías?", "options": ["Las cuidaba con cariño", "Las dejaba solas", "No tenía crías"], "correct_index": 0}
+      {"prompt": "¿Cómo era el Apatosaurio con sus crías?", "options": ["Las dejaba solas", "No tenía crías", "Las cuidaba con cariño"], "correct_index": 2}
     ]
   },
   {
@@ -99,7 +99,7 @@
       {"prompt": "¿A qué animal de hoy se parecía el Gallimimus?", "options": ["A un avestruz", "A un elefante", "A una tortuga"], "correct_index": 0},
       {"prompt": "¿Cómo era su pico?", "options": ["Lleno de dientes filosos", "Sin dientes, como el de un ave", "Redondo como una pelota"], "correct_index": 1},
       {"prompt": "¿Qué hacía cuando sentía peligro?", "options": ["Peleaba con fuerza", "Se escondía bajo el agua", "Escapaba corriendo rápido"], "correct_index": 2},
-      {"prompt": "¿Dónde vivió el Gallimimus?", "options": ["En un desierto de Asia", "En el fondo del mar", "En una montaña de hielo"], "correct_index": 0}
+      {"prompt": "¿Dónde vivió el Gallimimus?", "options": ["En el fondo del mar", "En una montaña de hielo", "En un desierto de Asia"], "correct_index": 2}
     ]
   },
   {
@@ -125,7 +125,7 @@
       {"prompt": "¿Por qué el Coelophysis pesaba poquito?", "options": ["Porque comía poco", "Porque sus huesos eran huecos", "Porque era muy pequeño"], "correct_index": 1},
       {"prompt": "¿Qué significa su nombre?", "options": ["Forma hueca", "Diente grande", "Cola corta"], "correct_index": 0},
       {"prompt": "¿Qué comía el Coelophysis?", "options": ["Hojas y frutos", "Rocas del desierto", "Insectos y lagartijas"], "correct_index": 2},
-      {"prompt": "¿Cómo vivía el Coelophysis?", "options": ["En grupos grandes", "Siempre solo", "Debajo del agua"], "correct_index": 0}
+      {"prompt": "¿Cómo vivía el Coelophysis?", "options": ["Siempre solo", "Debajo del agua", "En grupos grandes"], "correct_index": 2}
     ]
   }
 ]

@@ -12,7 +12,9 @@ from .config import settings
 from .models import Child, DayChallenge, DayCompletion, ReadingSession
 
 
-def get_or_create_child(db: Session, child_id: int | None, name: str | None, avatar: str | None) -> Child:
+def get_or_create_child(
+    db: Session, child_id: int | None, name: str | None, avatar: str | None
+) -> Child:
     if child_id is not None:
         child = db.get(Child, child_id)
         if child is not None:
@@ -68,9 +70,7 @@ def get_completion(db: Session, child_id: int, day_id: int) -> DayCompletion | N
 
 
 def compute_progress(db: Session, child_id: int, today: date) -> dict:
-    completions = list(
-        db.scalars(select(DayCompletion).where(DayCompletion.child_id == child_id))
-    )
+    completions = list(db.scalars(select(DayCompletion).where(DayCompletion.child_id == child_id)))
     # Fechas completadas (para racha) vía join con DayChallenge.
     completed_dates: list[date] = []
     total_stars = 0

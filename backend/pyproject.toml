@@ -34,6 +34,10 @@ target-version = "py311"
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "W"]
 
+[tool.ruff.lint.flake8-bugbear]
+# Depends() y Query() en los valores por defecto es el patrón idiomático de FastAPI.
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]
+
 [tool.mypy]
 python_version = "3.11"
 ignore_missing_imports = true

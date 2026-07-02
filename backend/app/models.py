@@ -63,7 +63,9 @@ class ReadingSession(Base):
     """Progreso de lectura de un niño en un día (para retomar y contar palabras)."""
 
     __tablename__ = "reading_session"
-    __table_args__ = (UniqueConstraint("child_id", "day_challenge_id", name="uq_reading_child_day"),)
+    __table_args__ = (
+        UniqueConstraint("child_id", "day_challenge_id", name="uq_reading_child_day"),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
     child_id: Mapped[int] = mapped_column(ForeignKey("child.id"))
@@ -72,9 +74,7 @@ class ReadingSession(Base):
     last_word_index: Mapped[int] = mapped_column(default=0)
     words_read: Mapped[int] = mapped_column(default=0)
     finished: Mapped[bool] = mapped_column(default=False)
-    updated_at: Mapped[datetime] = mapped_column(
-        server_default=func.now(), onupdate=func.now()
-    )
+    updated_at: Mapped[datetime] = mapped_column(server_default=func.now(), onupdate=func.now())
 
 
 class DayCompletion(Base):

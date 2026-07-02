@@ -64,11 +64,9 @@ def generate(day_number: int, count: int = PROBLEMS_PER_DAY) -> list[MathProblem
     for i in range(count):
         kind = pattern[i % len(pattern)]
         if kind == "sum":
-            b = rng.randint(1, top)
-            a = rng.randint(1, top)
-            # Mantener la suma dentro del techo del día.
-            if a + b > top:
-                a = max(1, top - b)
+            # Elegir a y luego b dejando sitio, para que a + b nunca pase el techo.
+            a = rng.randint(1, max(1, top - 1))
+            b = rng.randint(1, top - a)
             problems.append(
                 MathProblem(
                     id=f"{day_number}-{i}",

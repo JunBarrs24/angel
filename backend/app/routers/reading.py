@@ -31,6 +31,10 @@ def save_reading(payload: ReadingUpdateIn, db: Session = Depends(get_db)) -> Rea
         session = ReadingSession(
             child_id=payload.child_id,
             day_challenge_id=challenge.id,
+            seconds_elapsed=0,
+            last_word_index=0,
+            words_read=0,
+            finished=False,
         )
         db.add(session)
 

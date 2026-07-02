@@ -30,7 +30,9 @@ from ..schemas import (
 router = APIRouter(prefix="/answers", tags=["answers"])
 
 
-def _grade_comprehension(challenge: DayChallenge, answers: list[int]) -> tuple[int, int, list[bool], list[int]]:
+def _grade_comprehension(
+    challenge: DayChallenge, answers: list[int]
+) -> tuple[int, int, list[bool], list[int]]:
     per_item: list[bool] = []
     correct_indices: list[int] = []
     for idx, q in enumerate(challenge.questions):
@@ -41,7 +43,9 @@ def _grade_comprehension(challenge: DayChallenge, answers: list[int]) -> tuple[i
 
 
 @router.post("/comprehension", response_model=ComprehensionResultOut)
-def check_comprehension(payload: ComprehensionIn, db: Session = Depends(get_db)) -> ComprehensionResultOut:
+def check_comprehension(
+    payload: ComprehensionIn, db: Session = Depends(get_db)
+) -> ComprehensionResultOut:
     challenge = services.get_challenge_by_day(db, payload.day_number)
     if challenge is None:
         raise HTTPException(status_code=404, detail="Ese día no existe")

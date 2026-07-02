@@ -17,6 +17,7 @@ from ..schemas import (
     DayChallengeOut,
     MapItemOut,
     MapOut,
+    MathProblemOut,
     QuestionOut,
     ReadingStateOut,
 )
@@ -29,7 +30,9 @@ def _today(as_of: date | None) -> date:
     return as_of or date.today()
 
 
-def _build_day_out(db: Session, challenge: DayChallenge, child_id: int, today: date) -> DayChallengeOut:
+def _build_day_out(
+    db: Session, challenge: DayChallenge, child_id: int, today: date
+) -> DayChallengeOut:
     reading = services.get_reading_session(db, child_id, challenge.id)
     completion = services.get_completion(db, child_id, challenge.id)
     return DayChallengeOut(
@@ -44,7 +47,7 @@ def _build_day_out(db: Session, challenge: DayChallenge, child_id: int, today: d
             QuestionOut(id=q.id, order=q.order, prompt=q.prompt, options=q.options)
             for q in challenge.questions
         ],
-        math=services.build_math(challenge.day_number),
+        math=[MathProblemOut(**m) for m in services.build_math(challenge.day_number)],
         reading=ReadingStateOut(
             seconds_elapsed=reading.seconds_elapsed if reading else 0,
             last_word_index=reading.last_word_index if reading else 0,
@@ -109,15 +112,11 @@ def get_map(
     today = _today(as_of)
     challenges = list(db.scalars(select(DayChallenge).order_by(DayChallenge.day_number)))
     completed_ids = set(
-        db.scalars(
-            select(DayCompletion.day_challenge_id).where(DayCompletion.child_id == child_id)
-        )
+        db.scalars(select(DayCompletion.day_challenge_id).where(DayCompletion.child_id == child_id))
     )
     stars_by_id = {
         c.day_challenge_id: c.stars
-        for c in db.scalars(
-            select(DayCompletion).where(DayCompletion.child_id == child_id)
-        )
+        for c in db.scalars(select(DayCompletion).where(DayCompletion.child_id == child_id))
     }
     items = [
         MapItemOut(

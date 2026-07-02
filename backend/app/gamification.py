@@ -115,7 +115,7 @@ def best_streak_from_dates(completed_dates: list[date]) -> int:
     days = sorted(set(completed_dates))
     best = 1
     current = 1
-    for prev, curr in zip(days, days[1:]):
+    for prev, curr in zip(days, days[1:], strict=False):
         if curr - prev == timedelta(days=1):
             current += 1
             best = max(best, current)

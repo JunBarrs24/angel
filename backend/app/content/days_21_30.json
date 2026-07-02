@@ -1,0 +1,127 @@
+[
+  {
+    "day_number": 21,
+    "dino_name": "Dilophosaurio",
+    "dino_emoji": "🦖",
+    "title": "Las dos crestas brillantes",
+    "story": "Ángel Eduardo caminaba por un bosque muy antiguo cuando vio un dinosaurio con dos crestas de hueso sobre la cabeza. Era el Dilophosaurio, y sus crestas parecían dos abanicos de colores. Vivió hace mucho tiempo, en lo que hoy es América del Norte. Medía casi seis metros de largo, pero era delgado y muy rápido al correr. El Dilophosaurio era carnívoro, así que comía peces y animales pequeños cerca de los ríos. Sus crestas no servían para pelear. Los científicos creen que las usaba para verse bonito y llamar la atención de otros dinosaurios. Ángel Eduardo lo observó con cuidado desde lejos. El dinosaurio bajó la cabeza al agua, bebió un poco y siguió su camino tranquilo. Sus patas largas dejaban huellas grandes en el barro. El niño pensó que era como un pájaro gigante con corona doble. Antes de irse, el Dilophosaurio movió sus crestas al sol y brillaron como joyas. Ángel Eduardo sonrió feliz por haber conocido a un dinosaurio tan especial y elegante.",
+    "questions": [
+      {"prompt": "¿Qué tenía el Dilophosaurio sobre la cabeza?", "options": ["Dos crestas de hueso", "Un solo cuerno largo", "Muchas espinas"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba sus crestas?", "options": ["Para cavar hoyos", "Para pelear con fuerza", "Para verse bonito y llamar la atención"], "correct_index": 2},
+      {"prompt": "¿Qué comía el Dilophosaurio?", "options": ["Solo hojas y flores", "Peces y animales pequeños", "Frutas de los árboles"], "correct_index": 1},
+      {"prompt": "¿Cómo era su cuerpo al correr?", "options": ["Delgado y muy rápido", "Gordo y lento", "Pesado y torpe"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 22,
+    "dino_name": "Maiasaura",
+    "dino_emoji": "🦕",
+    "title": "La buena mamá dinosaurio",
+    "story": "En un valle verde vivía la Maiasaura, un dinosaurio muy cariñoso. Su nombre significa buena madre lagarto, porque cuidaba muy bien a sus crías. La Maiasaura era herbívora y comía plantas, hojas y frutas suaves. Vivió hace mucho tiempo en América del Norte y medía unos nueve metros de largo. Le gustaba vivir en grupo con muchas otras Maiasauras. Cada mamá hacía un nido grande con barro y ponía sus huevos dentro. Luego cubría los huevos con hojas para mantenerlos calientes. Cuando los bebés nacían, la mamá les traía comida al nido, igual que los pájaros de hoy. Ángel Eduardo vio a una mamá Maiasaura llevando ramitas verdes a sus pequeños. Los bebés abrían la boca y comían felices. La familia caminaba junta para estar segura. Los científicos encontraron muchos nidos juntos y por eso saben que estos dinosaurios eran buenos padres. Ángel Eduardo pensó que la Maiasaura cuidaba a sus hijos con mucho amor, tal como su propia mamá lo cuidaba a él cada día.",
+    "questions": [
+      {"prompt": "¿Qué significa el nombre Maiasaura?", "options": ["Diente grande", "Buena madre lagarto", "Cola larga"], "correct_index": 1},
+      {"prompt": "¿Qué comía la Maiasaura?", "options": ["Plantas, hojas y frutas suaves", "Peces del río", "Otros dinosaurios"], "correct_index": 0},
+      {"prompt": "¿Qué hacía la mamá cuando nacían los bebés?", "options": ["Los dejaba solos", "Se iba muy lejos", "Les traía comida al nido"], "correct_index": 2}
+    ]
+  },
+  {
+    "day_number": 23,
+    "dino_name": "Oviraptor",
+    "dino_emoji": "🦖",
+    "title": "El dinosaurio malentendido",
+    "story": "El Oviraptor era un dinosaurio pequeño y curioso, del tamaño de una persona. Su nombre significa ladrón de huevos, pero fue un gran error. Cuando lo encontraron, estaba junto a unos huevos y pensaron que se los quería robar. Después los científicos descubrieron la verdad: esos huevos eran suyos y el Oviraptor los estaba cuidando. Vivió hace mucho tiempo en Asia, en lugares con mucho polvo y arena. Tenía plumas en el cuerpo y un pico fuerte sin dientes. Con ese pico comía plantas, semillas y a veces animalitos pequeños. Ángel Eduardo lo imaginó sentado sobre su nido, calentando los huevos con su cuerpo emplumado. El Oviraptor movía la cabeza de un lado a otro, vigilando todo. Sus brazos tenían plumas largas como pequeñas alas, aunque no podía volar. Era un papá muy dedicado. Ángel Eduardo aprendió una lección importante: no hay que juzgar a nadie sin conocerlo bien. El Oviraptor no era un ladrón, sino un dinosaurio bueno que protegía a su familia con cariño.",
+    "questions": [
+      {"prompt": "¿Por qué se llama ladrón de huevos por error?", "options": ["Porque robaba comida", "Porque los huevos eran suyos y los cuidaba", "Porque escondía piedras"], "correct_index": 1},
+      {"prompt": "¿Cómo era el pico del Oviraptor?", "options": ["Fuerte y sin dientes", "Lleno de dientes filosos", "Blando y pequeño"], "correct_index": 0},
+      {"prompt": "¿Qué tenía en el cuerpo y los brazos?", "options": ["Escamas duras", "Pelo suave", "Plumas"], "correct_index": 2},
+      {"prompt": "¿Qué lección aprendió Ángel Eduardo?", "options": ["No juzgar a nadie sin conocerlo", "Correr muy rápido", "Comer muchas semillas"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 24,
+    "dino_name": "Paquicefalosaurio",
+    "dino_emoji": "🦕",
+    "title": "El casco de hueso",
+    "story": "El Paquicefalosaurio tenía una cabeza muy especial, con un domo de hueso grueso como un casco. Su nombre significa lagarto de cabeza gruesa. Ese hueso duro medía muchos centímetros y estaba rodeado de pequeñas puntas, como una corona. Vivió hace mucho tiempo en América del Norte y era herbívoro. Comía hojas, semillas y frutas que encontraba en el suelo. Medía unos cuatro metros de largo y caminaba en dos patas. Los científicos creen que usaba su cabeza dura para darse suaves topes con otros de su especie, como un juego para saber quién era más fuerte. Ángel Eduardo lo vio comiendo tranquilamente entre los arbustos. De pronto, otro Paquicefalosaurio se acercó y juntaron sus cabezas con cuidado. Hacían un ruido gracioso, pero no se lastimaban gracias a su casco natural. Después siguieron comiendo juntos como buenos amigos. Ángel Eduardo pensó que era como llevar un casco puesto todo el tiempo. El dinosaurio movió la cabeza y sus puntas brillaron. El niño rió al ver su cabeza tan redonda y dura.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial la cabeza del Paquicefalosaurio?", "options": ["Un domo de hueso grueso como un casco", "Dos grandes cuernos", "Un pico muy largo"], "correct_index": 0},
+      {"prompt": "¿Qué comía este dinosaurio?", "options": ["Peces y carne", "Hojas, semillas y frutas", "Insectos voladores"], "correct_index": 1},
+      {"prompt": "¿Para qué usaba su cabeza dura?", "options": ["Para nadar mejor", "Para cavar túneles", "Para darse suaves topes con otros"], "correct_index": 2}
+    ]
+  },
+  {
+    "day_number": 25,
+    "dino_name": "Styracosaurio",
+    "dino_emoji": "🦕",
+    "title": "La corona de cuernos",
+    "story": "El Styracosaurio parecía tener una corona espinosa en la cabeza. De su collar de hueso salían muchos cuernos largos y puntiagudos que apuntaban al cielo. Además, tenía un gran cuerno en la nariz. Su nombre significa lagarto con púas. Vivió hace mucho tiempo en América del Norte y era herbívoro. Con su pico fuerte cortaba plantas duras y hojas para comer. Medía unos cinco metros de largo y era robusto, como un rinoceronte grande. Ángel Eduardo lo observó pastando en una llanura llena de flores. El dinosaurio levantó la cabeza y su corona de cuernos brilló bajo el sol. Los científicos creen que usaba esos cuernos para verse impresionante y asustar a los peligros, no tanto para pelear. El Styracosaurio caminaba en cuatro patas fuertes y firmes. Cuando escuchó un ruido, giró despacio y mostró su collar espinoso. Luego, tranquilo, siguió comiendo hierba fresca. Ángel Eduardo pensó que ese dinosaurio parecía un rey con su corona natural. Se despidió con la mano y el Styracosaurio agachó la cabeza como saludando.",
+    "questions": [
+      {"prompt": "¿Qué salía del collar de hueso del Styracosaurio?", "options": ["Plumas suaves", "Muchos cuernos largos y puntiagudos", "Hojas verdes"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Styracosaurio?", "options": ["Plantas y hojas", "Pescado fresco", "Huevos de otros dinosaurios"], "correct_index": 0},
+      {"prompt": "¿Con cuántas patas caminaba?", "options": ["Con dos patas", "Volando sin patas", "Con cuatro patas fuertes"], "correct_index": 2},
+      {"prompt": "¿Para qué usaba sus cuernos, según los científicos?", "options": ["Para verse impresionante y asustar peligros", "Para cavar la tierra", "Para nadar en el mar"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 26,
+    "dino_name": "Therizinosaurio",
+    "dino_emoji": "🦖",
+    "title": "Las garras gigantes",
+    "story": "El Therizinosaurio tenía las garras más largas de todos los dinosaurios. Cada una era como una espada curva, y podían medir casi un metro. Aunque parecían peligrosas, este dinosaurio era herbívoro y muy tranquilo. Usaba sus garras para acercar las ramas altas y comer hojas. Su nombre significa lagarto guadaña, por sus uñas parecidas a una herramienta del campo. Vivió hace mucho tiempo en Asia y tenía plumas en el cuerpo. Medía unos diez metros de largo y tenía una gran barriga para digerir muchas plantas. Ángel Eduardo lo vio estirando su largo cuello hacia un árbol. Con sus garras suaves jaló una rama llena de hojas verdes y masticó despacio. No cazaba a nadie, solo quería comer plantas todo el día. Sus plumas se movían con el viento como un abrigo esponjoso. El niño pensó que sus garras enormes servían mejor para comer que para asustar. El Therizinosaurio caminaba lento y en calma, como un gigante amable del bosque. Ángel Eduardo lo saludó y siguió explorando contento.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial el Therizinosaurio?", "options": ["Las garras más largas de todos los dinosaurios", "Una cola con púas", "Alas para volar"], "correct_index": 0},
+      {"prompt": "¿Qué comía este dinosaurio?", "options": ["Carne y peces", "Insectos", "Hojas y plantas"], "correct_index": 2},
+      {"prompt": "¿Para qué usaba sus garras?", "options": ["Para acercar ramas y comer hojas", "Para cavar el mar", "Para volar alto"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 27,
+    "dino_name": "Ceratosaurio",
+    "dino_emoji": "🦖",
+    "title": "El dinosaurio del cuerno",
+    "story": "El Ceratosaurio tenía un cuerno pequeño sobre la nariz, por eso su nombre significa lagarto con cuerno. También tenía crestas encima de los ojos que lo hacían ver muy elegante. Vivió hace mucho tiempo en lo que hoy es América del Norte, cerca de ríos y pantanos. Era carnívoro y comía peces y animales pequeños que vivían junto al agua. Medía unos seis metros de largo y caminaba en dos patas fuertes. Su cola era larga y flexible, y le ayudaba a mantener el equilibrio y a nadar. Ángel Eduardo lo observó caminando por la orilla de un río. El Ceratosaurio metió las patas al agua buscando su comida. Su cuerno de la nariz no servía para pelear, sino solo para adorno, como un lindo detalle. Los científicos creen que era un buen nadador entre los dinosaurios. El niño lo vio moverse con cuidado, muy concentrado en encontrar peces. Después el dinosaurio sacudió la cola y algunas gotas volaron por el aire. Ángel Eduardo rió y pensó que parecía un cazador de río muy tranquilo.",
+    "questions": [
+      {"prompt": "¿Qué significa el nombre Ceratosaurio?", "options": ["Cola larga", "Lagarto con cuerno", "Cabeza dura"], "correct_index": 1},
+      {"prompt": "¿Dónde vivía el Ceratosaurio?", "options": ["En montañas de nieve", "En el desierto seco", "Cerca de ríos y pantanos"], "correct_index": 2},
+      {"prompt": "¿Qué comía?", "options": ["Peces y animales pequeños", "Solo hojas verdes", "Flores y semillas"], "correct_index": 0},
+      {"prompt": "¿Para qué servía su cuerno de la nariz?", "options": ["Para cavar hoyos", "Solo para adorno", "Para volar"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 28,
+    "dino_name": "Giganotosaurio",
+    "dino_emoji": "🦖",
+    "title": "El gigante del sur",
+    "story": "El Giganotosaurio fue uno de los dinosaurios carnívoros más grandes que existieron. Su nombre significa lagarto gigante del sur, porque sus huesos se encontraron en América del Sur, en Argentina. Medía cerca de trece metros de largo, más que un camión grande. Vivió hace mucho tiempo en tierras cálidas con muchos ríos. Aunque era enorme, caminaba en dos patas y podía correr bastante rápido. Tenía una cabeza muy grande y una cola larga para no perder el equilibrio. Ángel Eduardo lo vio caminar entre los árboles, y sus pasos hacían temblar el suelo suavemente. A pesar de su tamaño, el Giganotosaurio se movía con calma bajo el sol. Los científicos creen que a veces caminaba en grupo con otros de su especie. El niño se quedó quieto y observó al gigante estirarse y bostezar, mostrando lo tranquilo que estaba. Sus patas eran gruesas como troncos de árbol. Ángel Eduardo pensó que era el dinosaurio más grande que había visto en su aventura. Con mucho respeto, lo saludó desde lejos y siguió su camino.",
+    "questions": [
+      {"prompt": "¿Qué significa el nombre Giganotosaurio?", "options": ["Diente pequeño", "Lagarto gigante del sur", "Cabeza redonda"], "correct_index": 1},
+      {"prompt": "¿Dónde se encontraron sus huesos?", "options": ["En América del Sur, en Argentina", "En Europa", "En la Antártida"], "correct_index": 0},
+      {"prompt": "¿Cómo se movía a pesar de su tamaño?", "options": ["Volando por el cielo", "Nadando en el mar", "Podía correr bastante rápido"], "correct_index": 2}
+    ]
+  },
+  {
+    "day_number": 29,
+    "dino_name": "Mosasaurio",
+    "dino_emoji": "🐊",
+    "title": "El nadador del mar antiguo",
+    "story": "El Mosasaurio no era un dinosaurio, sino un enorme reptil marino que vivía en el mar. Hace mucho tiempo nadaba en los océanos, cuando el agua cubría muchos lugares que hoy son tierra. Era muy grande, de casi doce metros de largo, y tenía una cola fuerte que movía como un remo para avanzar rápido. En vez de patas tenía cuatro aletas suaves que lo ayudaban a girar en el agua. El Mosasaurio comía peces y otros animales del mar. Respiraba aire, así que subía a la superficie a tomar aliento, igual que las ballenas de hoy. Ángel Eduardo lo imaginó nadando entre las olas azules, brillando bajo el sol. El gran reptil movía la cola y dejaba una estela de burbujas. Los científicos encontraron sus huesos cerca de un río en Europa, y por eso lo conocemos. El niño pensó que era como un dragón amable del océano. El Mosasaurio sacó la cabeza del agua, tomó aire y volvió a sumergirse despacio. Ángel Eduardo lo despidió mientras desaparecía en el mar tranquilo.",
+    "questions": [
+      {"prompt": "¿Qué era el Mosasaurio?", "options": ["Un dinosaurio que volaba", "Un enorme reptil marino", "Un pez pequeño"], "correct_index": 1},
+      {"prompt": "¿Qué tenía en vez de patas?", "options": ["Cuatro aletas suaves", "Ruedas", "Alas grandes"], "correct_index": 0},
+      {"prompt": "¿Por qué subía a la superficie?", "options": ["Para dormir en la playa", "Para tomar el sol", "Para respirar aire"], "correct_index": 2},
+      {"prompt": "¿Qué comía el Mosasaurio?", "options": ["Peces y otros animales del mar", "Hojas y plantas", "Frutas de los árboles"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 30,
+    "dino_name": "Elasmosaurio",
+    "dino_emoji": "🐊",
+    "title": "El cuello más largo del mar",
+    "story": "El Elasmosaurio era un reptil marino con el cuello más largo que puedas imaginar. Su cuello solo medía más de la mitad de su cuerpo, con muchísimos huesos. Vivió hace mucho tiempo en los mares antiguos y no era un dinosaurio, sino un pariente que nadaba en el agua. Medía unos catorce metros de largo contando su cuello enorme. Tenía cuatro aletas anchas que movía como remos para deslizarse suavemente. El Elasmosaurio comía peces pequeños que atrapaba estirando su largo cuello sin mover el cuerpo. Respiraba aire y salía a la superficie de vez en cuando. Ángel Eduardo lo vio flotar en un mar tranquilo y azul. El reptil estiró su cuello hacia arriba, como una jirafa del océano, y miró alrededor con curiosidad. Los científicos encontraron sus huesos y quedaron asombrados por ese cuello tan largo. El niño pensó que parecía un cisne gigante y gentil del agua. El Elasmosaurio movió sus aletas despacio y nadó entre los peces brillantes. Ángel Eduardo se despidió feliz, terminando su gran aventura con los dinosaurios.",
+    "questions": [
+      {"prompt": "¿Qué era lo más especial del Elasmosaurio?", "options": ["Su cuello larguísimo", "Sus grandes alas", "Su cuerno en la nariz"], "correct_index": 0},
+      {"prompt": "¿Cómo se movía en el agua?", "options": ["Con dos patas", "Con cuatro aletas anchas como remos", "Saltando sobre las olas"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Elasmosaurio?", "options": ["Plantas del fondo", "Algas verdes", "Peces pequeños"], "correct_index": 2}
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "day_number": 31,
+    "dino_name": "Kentrosaurio",
+    "dino_emoji": "🦕",
+    "title": "El dino con espinas puntiagudas",
+    "story": "En una tarde soleada, Ángel Eduardo caminaba por un bosque muy antiguo. De pronto vio al Kentrosaurio, un dinosaurio con muchas espinas y placas en su lomo. Parecía llevar una fila de picos desde el cuello hasta la cola. Ángel se acercó con cuidado, pero el Kentrosaurio era tranquilo y comía plantas bajitas del suelo. Este dinosaurio vivía hace mucho tiempo en lo que hoy es África, en un lugar llamado Tanzania. No era muy grande: medía como cinco metros, casi como un auto largo. Sus espinas no eran para atacar, sino para protegerse de otros animales. Cuando alguien se acercaba demasiado, movía su cola con dos espinas largas para decir amablemente: mejor no te acerques tanto. Ángel Eduardo se rió al verlo masticar hojas despacio, como si nada le preocupara. Aprendió que el Kentrosaurio era pariente del famoso Estegosaurio. Antes de irse, el pequeño explorador dibujó todas las espinas en su cuaderno de aventuras.",
+    "questions": [
+      {"prompt": "¿Qué comía el Kentrosaurio?", "options": ["Carne de otros dinosaurios", "Plantas y hojas", "Peces del río"], "correct_index": 1},
+      {"prompt": "¿En qué continente vivía el Kentrosaurio?", "options": ["África", "Europa", "Australia"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba sus espinas?", "options": ["Para cazar", "Para nadar", "Para protegerse"], "correct_index": 2},
+      {"prompt": "¿De qué dinosaurio famoso era pariente?", "options": ["Del Tiranosaurio", "Del Estegosaurio", "Del Triceratops"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 32,
+    "dino_name": "Baryonyx",
+    "dino_emoji": "🦖",
+    "title": "El pescador de garras grandes",
+    "story": "Junto a un río tranquilo, Ángel Eduardo descubrió al Baryonyx, un dinosaurio muy curioso. Tenía un hocico largo y delgado, parecido al de un cocodrilo, lleno de dientes pequeños. Pero lo más especial eran sus garras enormes en las manos, del tamaño de un plátano grande. El Baryonyx no cazaba otros dinosaurios grandes: prefería pescar. Metía sus garras en el agua y atrapaba peces resbaladizos, igual que hace un oso hoy en día. Este dinosaurio vivía hace muchísimos años en lo que hoy es Inglaterra, en Europa. Medía unos diez metros de largo, así que era bastante grande, pero muy tranquilo mientras hubiera peces. Ángel Eduardo lo observó desde la orilla y notó que era paciente y silencioso. El Baryonyx esperaba quieto y, cuando veía un pez, ¡zas!, lo pescaba con cuidado. El pequeño explorador pensó que este dinosaurio sería un buen amigo para ir de pesca. Feliz, anotó en su cuaderno: el Baryonyx era el gran pescador del pasado.",
+    "questions": [
+      {"prompt": "¿Qué le gustaba comer al Baryonyx?", "options": ["Hojas de árboles", "Peces del río", "Frutas dulces"], "correct_index": 1},
+      {"prompt": "¿A qué animal se parecía su hocico?", "options": ["A un cocodrilo", "A un elefante", "A un conejo"], "correct_index": 0},
+      {"prompt": "¿Qué tenían de especial sus manos?", "options": ["Eran muy pequeñas", "Tenían alas", "Tenían garras enormes"], "correct_index": 2},
+      {"prompt": "¿Dónde vivía el Baryonyx?", "options": ["En Inglaterra", "En México", "En China"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 33,
+    "dino_name": "Utahraptor",
+    "dino_emoji": "🦖",
+    "title": "El corredor veloz",
+    "story": "Ángel Eduardo escuchó unos pasos rápidos entre los arbustos. Era el Utahraptor, un dinosaurio veloz y muy inteligente. Aunque tenía garras curvas en sus patas, era amable con el pequeño explorador y solo quería mostrarle lo rápido que corría. El Utahraptor era el raptor más grande que existió: medía como seis metros de largo. Vivía hace mucho tiempo en un lugar que hoy se llama Utah, en Estados Unidos. Por eso lleva ese nombre tan simpático. Su cuerpo estaba cubierto de plumas, aunque no podía volar. Las plumas le servían para mantenerse calientito, como un abrigo suave. El Utahraptor era listo y cazaba en grupo con otros de su especie, ayudándose entre todos. Ángel Eduardo trató de correr a su lado, pero el dinosaurio era mucho más veloz y giraba con gran agilidad. Al final, el Utahraptor se detuvo y movió la cabeza como saludando. El pequeño explorador aplaudió y escribió en su cuaderno: el Utahraptor es el corredor plumoso más rápido de todos.",
+    "questions": [
+      {"prompt": "¿Qué tenía el Utahraptor en su cuerpo?", "options": ["Escamas de pez", "Plumas suaves", "Un caparazón duro"], "correct_index": 1},
+      {"prompt": "¿De dónde viene el nombre del Utahraptor?", "options": ["Del lugar llamado Utah", "De un río famoso", "De su color"], "correct_index": 0},
+      {"prompt": "¿Cómo cazaba el Utahraptor?", "options": ["Siempre solo", "Durmiendo", "En grupo con otros"], "correct_index": 2},
+      {"prompt": "¿Qué sabía hacer muy bien este dinosaurio?", "options": ["Nadar profundo", "Correr muy rápido", "Volar alto"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 34,
+    "dino_name": "Microraptor",
+    "dino_emoji": "🦅",
+    "title": "El dino con cuatro alas",
+    "story": "Entre las ramas de un árbol alto, Ángel Eduardo vio algo brillante y pequeño. ¡Era el Microraptor! Este dinosaurio era muy chiquito, casi del tamaño de un cuervo. Lo más asombroso es que tenía plumas en las cuatro patas, así que parecía tener cuatro alas. Con ellas planeaba de árbol en árbol, deslizándose por el aire como una cometa. El Microraptor vivía hace muchísimos años en lo que hoy es China. Sus plumas eran negras y brillaban con reflejos azules cuando les daba el sol, igual que las plumas de un cuervo hoy. Comía insectos y animales muy pequeños. No era peligroso para nada; era ligero y silencioso. Ángel Eduardo lo siguió con la mirada mientras saltaba y planeaba una y otra vez. Le pareció uno de los dinosaurios más bonitos que había conocido. El pequeño explorador extendió los brazos imaginando que también podía planear. Luego, contento, dibujó en su cuaderno un dinosaurio brillante con cuatro alas volando entre los árboles.",
+    "questions": [
+      {"prompt": "¿De qué tamaño era el Microraptor?", "options": ["Como un elefante", "Como un cuervo pequeño", "Como un auto"], "correct_index": 1},
+      {"prompt": "¿Qué tenía de asombroso el Microraptor?", "options": ["Plumas en las cuatro patas", "Una cola de fuego", "Cuernos gigantes"], "correct_index": 0},
+      {"prompt": "¿De qué color brillaban sus plumas?", "options": ["Rojas y amarillas", "Verdes y rosadas", "Negras con reflejos azules"], "correct_index": 2},
+      {"prompt": "¿Qué comía el Microraptor?", "options": ["Insectos y animales pequeños", "Hojas grandes", "Rocas"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 35,
+    "dino_name": "Protoceratops",
+    "dino_emoji": "🦕",
+    "title": "El guardián de los huevos",
+    "story": "En un desierto lleno de arena dorada, Ángel Eduardo encontró al Protoceratops. Este dinosaurio tenía una cabeza grande con un collar de hueso detrás, como un abanico. No tenía cuernos largos, pero su cara era muy simpática y con forma de pico, parecido al de un loro. El Protoceratops comía plantas del suelo y era del tamaño de una oveja grande. Vivía hace mucho tiempo en lo que hoy es Mongolia, en Asia. Lo más tierno de este dinosaurio es que cuidaba muy bien sus huevos. Hacía nidos en la arena y los protegía hasta que los bebés nacían. Ángel Eduardo se acercó despacito para no asustar a los pequeños. El Protoceratops lo miró tranquilo, porque entendió que el niño solo quería mirar. Alrededor del nido corrían las crías, dando pasitos torpes y muy graciosos. El pequeño explorador sonrió al verlas. Antes de marcharse, escribió en su cuaderno: el Protoceratops es el papá y la mamá más cariñosos del mundo de los dinosaurios.",
+    "questions": [
+      {"prompt": "¿A qué animal se parecía la cara del Protoceratops?", "options": ["A un loro con pico", "A un tigre", "A un caballo"], "correct_index": 0},
+      {"prompt": "¿Qué cuidaba con mucho cariño el Protoceratops?", "options": ["Sus rocas brillantes", "Sus huevos y crías", "Su comida escondida"], "correct_index": 1},
+      {"prompt": "¿Dónde vivía este dinosaurio?", "options": ["En el mar", "En Mongolia, en Asia", "En Australia"], "correct_index": 1},
+      {"prompt": "¿De qué tamaño era el Protoceratops?", "options": ["Como una hormiga", "Como una ballena", "Como una oveja grande"], "correct_index": 2}
+    ]
+  },
+  {
+    "day_number": 36,
+    "dino_name": "Amargasaurio",
+    "dino_emoji": "🦕",
+    "title": "El dino de la vela en la espalda",
+    "story": "Caminando por un valle verde, Ángel Eduardo se quedó con la boca abierta. Frente a él estaba el Amargasaurio, un dinosaurio con dos filas de espinas largas en el cuello y la espalda. Parecía llevar una vela o una crin muy especial. Nadie más tenía algo así. El Amargasaurio comía plantas y tenía un cuello largo, aunque no tanto como el de otros dinosaurios gigantes. Medía unos diez metros de largo. Vivía hace muchísimos años en lo que hoy es Argentina, en América del Sur. Ángel Eduardo se sintió orgulloso, porque ese dinosaurio vivió cerca de tierras latinoamericanas. El Amargasaurio movía su cuello despacio para alcanzar las hojas de los arbustos. Sus espinas quizás le servían para verse más grande o para mantenerse fresco bajo el sol. El pequeño explorador caminó a su lado un buen rato, admirando esa fila de picos tan curiosa. Luego dibujó al Amargasaurio en su cuaderno y le puso muchas espinas, como si fuera un dinosaurio con corona.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial el Amargasaurio?", "options": ["Alas de colores", "Dos filas de espinas largas", "Un caparazón redondo"], "correct_index": 1},
+      {"prompt": "¿En qué país vivía el Amargasaurio?", "options": ["En Argentina", "En Canadá", "En Egipto"], "correct_index": 0},
+      {"prompt": "¿Qué comía el Amargasaurio?", "options": ["Peces", "Insectos", "Plantas y hojas"], "correct_index": 2},
+      {"prompt": "¿Para qué podían servirle sus espinas?", "options": ["Para verse más grande", "Para volar", "Para cavar túneles"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 37,
+    "dino_name": "Cryolophosaurio",
+    "dino_emoji": "🦖",
+    "title": "El dino de la cresta elegante",
+    "story": "En un lugar muy frío y lejano, Ángel Eduardo se abrigó bien y salió a explorar. Allí conoció al Cryolophosaurio, un dinosaurio con una cresta curiosa sobre la cabeza. La cresta iba de lado a lado, como un peinado elegante, y por eso a este dino lo llaman el que tiene el copete de gala. El Cryolophosaurio vivía hace muchísimos años en lo que hoy es la Antártida. En aquella época ese lugar era más cálido y tenía bosques. El dinosaurio medía unos seis metros de largo y caminaba en dos patas. Comía otros animales, pero con Ángel Eduardo fue amable y solo le mostró su bonita cresta moviéndola con orgullo. El pequeño explorador pensó que parecía un artista presumido de su peinado. Fue uno de los primeros dinosaurios grandes que caminó por esas tierras heladas. Ángel Eduardo aprendió que hace mucho tiempo la Antártida no siempre estuvo cubierta de hielo. Contento, dibujó al Cryolophosaurio con su cresta más elegante en el cuaderno de aventuras.",
+    "questions": [
+      {"prompt": "¿Qué tenía el Cryolophosaurio sobre la cabeza?", "options": ["Una cresta elegante", "Dos cuernos largos", "Un sombrero de hojas"], "correct_index": 0},
+      {"prompt": "¿Dónde vivía este dinosaurio?", "options": ["En el desierto de arena", "En lo que hoy es la Antártida", "En una isla tropical"], "correct_index": 1},
+      {"prompt": "¿Cómo era la Antártida en aquella época?", "options": ["Siempre llena de hielo", "Un océano sin tierra", "Más cálida y con bosques"], "correct_index": 2},
+      {"prompt": "¿Cómo caminaba el Cryolophosaurio?", "options": ["En dos patas", "En cuatro patas", "Nadando siempre"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 38,
+    "dino_name": "Nodosaurio",
+    "dino_emoji": "🦕",
+    "title": "El dino con armadura",
+    "story": "Ángel Eduardo caminaba por un campo cuando vio algo que parecía una roca con patas. ¡Era el Nodosaurio! Este dinosaurio tenía el cuerpo cubierto de placas duras, como una verdadera armadura de caballero. Sobre su lomo llevaba bultos de hueso que lo protegían de todo. El Nodosaurio comía plantas bajitas y era muy tranquilo. No tenía cola con garrote, pero su armadura era tan fuerte que casi nada podía lastimarlo. Vivía hace muchísimos años en lo que hoy es América del Norte. Medía unos cinco o seis metros de largo y caminaba despacio, sin prisa. Ángel Eduardo tocó con cuidado una de las placas y sintió lo dura que era, como una piedra. El Nodosaurio siguió comiendo sin preocuparse, porque se sentía seguro con su armadura puesta. El pequeño explorador pensó que este dinosaurio era como un caballero muy amable del pasado. Antes de despedirse, dibujó al Nodosaurio con toda su armadura brillante en el cuaderno, y le puso una gran sonrisa.",
+    "questions": [
+      {"prompt": "¿Qué cubría el cuerpo del Nodosaurio?", "options": ["Plumas suaves", "Placas duras como armadura", "Escamas de pez"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Nodosaurio?", "options": ["Plantas bajitas", "Peces grandes", "Otros dinosaurios"], "correct_index": 0},
+      {"prompt": "¿Cómo era el carácter del Nodosaurio?", "options": ["Muy peligroso", "Nervioso y asustadizo", "Tranquilo y sin prisa"], "correct_index": 2},
+      {"prompt": "¿Dónde vivía el Nodosaurio?", "options": ["En América del Norte", "En el fondo del mar", "En la Antártida"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 39,
+    "dino_name": "Corythosaurio",
+    "dino_emoji": "🦕",
+    "title": "El dino que cantaba",
+    "story": "Cerca de un lago, Ángel Eduardo escuchó un sonido suave y musical. Era el Corythosaurio, un dinosaurio con una cresta redonda sobre la cabeza, parecida a un casco. Lo asombroso es que esa cresta estaba hueca por dentro, y cuando el aire pasaba, ¡hacía un sonido como de trompeta! Por eso decían que el Corythosaurio cantaba. Este dinosaurio comía plantas y tenía un pico ancho, muy parecido al de un pato. Medía unos nueve metros de largo. Vivía hace muchísimos años en lo que hoy es Canadá, en América del Norte. Podía caminar en dos patas o en cuatro, según quisiera. Usaba su canto para hablar con otros dinosaurios de su grupo y avisarles cosas. Ángel Eduardo se quedó escuchando aquella melodía y trató de imitarla con las manos en la boca. El Corythosaurio le respondió con otro sonido, como si conversaran. El pequeño explorador se rió feliz y anotó en su cuaderno: el Corythosaurio es el cantante más simpático de todos los dinosaurios.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial la cresta del Corythosaurio?", "options": ["Era de metal", "Estaba hueca y sonaba como trompeta", "Podía brillar de noche"], "correct_index": 1},
+      {"prompt": "¿A qué animal se parecía su pico?", "options": ["Al de un pato", "Al de un águila", "Al de un cocodrilo"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba su canto el Corythosaurio?", "options": ["Para dormir", "Para asustar plantas", "Para hablar con su grupo"], "correct_index": 2},
+      {"prompt": "¿Dónde vivía el Corythosaurio?", "options": ["En Canadá", "En África", "En Australia"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 40,
+    "dino_name": "Argentinosaurio",
+    "dino_emoji": "🦕",
+    "title": "El gigante final de la aventura",
+    "story": "¡Llegó el gran día! Ángel Eduardo caminó hasta un valle enorme y allí, altísimo, lo esperaba el Argentinosaurio, el dinosaurio más grande que ha existido. Era tan largo como tres autobuses juntos y tan alto como un edificio, con un cuello inmenso que tocaba las copas de los árboles más altos. El Argentinosaurio comía muchísimas plantas cada día para tener energía. Vivía hace muchísimos años en lo que hoy es Argentina, en América del Sur. A pesar de ser gigante, era muy tranquilo y bondadoso. El enorme dinosaurio bajó su cabeza con cuidado y saludó al pequeño explorador. Entonces le dijo con voz suave: Ángel Eduardo, has recorrido toda la aventura y conociste muchísimos dinosaurios. ¡Felicidades, gran explorador! Ángel Eduardo sintió una alegría inmensa. Había leído cada historia, respondido cada pregunta y aprendido un montón. El Argentinosaurio caminó a su lado bajo el sol, celebrando juntos el final de este viaje. El pequeño explorador levantó su cuaderno lleno de dibujos y gritó feliz: ¡Lo logré! Y así, con el gigante más grande, terminó su gran aventura.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial el Argentinosaurio?", "options": ["Era el dinosaurio más grande que existió", "Era el más pequeño", "Podía volar"], "correct_index": 0},
+      {"prompt": "¿En qué país vivía el Argentinosaurio?", "options": ["En Argentina", "En China", "En Egipto"], "correct_index": 0},
+      {"prompt": "¿Qué comía este dinosaurio gigante?", "options": ["Peces", "Muchísimas plantas", "Piedras"], "correct_index": 1},
+      {"prompt": "¿Qué logró Ángel Eduardo en esta aventura?", "options": ["Perderse en el bosque", "Completar toda la aventura de dinosaurios", "Olvidar todo lo aprendido"], "correct_index": 1}
+    ]
+  }
+]

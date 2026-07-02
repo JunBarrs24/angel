@@ -1,0 +1,132 @@
+[
+  {
+    "day_number": 1,
+    "dino_name": "Tiranosaurio Rex",
+    "dino_emoji": "🦖",
+    "title": "El gran Rex saluda al sol",
+    "story": "Una mañana, Ángel Eduardo caminaba por un bosque muy antiguo. De repente vio al Tiranosaurio Rex despertando con el sol. Era enorme, tan alto como una casa de dos pisos. Tenía una cabeza gigante y dientes grandes como plátanos. Aunque parecía fiero, ese día solo tenía hambre y curiosidad. El Tiranosaurio Rex era un dinosaurio carnívoro, eso quiere decir que comía carne. Vivió hace muchísimos años en lo que hoy es América del Norte. Sus brazos eran muy cortitos, pero sus patas eran fuertes y podía correr bastante rápido. El Rex olfateó el aire con su gran nariz para buscar comida. Ángel Eduardo se quedó quieto detrás de una roca y lo observó con calma. El dinosaurio movió la cola para mantener el equilibrio y siguió su camino sin hacerle daño a nadie. Ángel Eduardo aprendió que, aunque el Rex era muy grande, también era un animal más de aquel mundo antiguo. Feliz por su aventura, el niño regresó a casa pensando en el rey de los dinosaurios.",
+    "questions": [
+      {"prompt": "¿Qué comía el Tiranosaurio Rex?", "options": ["Solo plantas y hojas", "Carne, era carnívoro", "Frutas del bosque"], "correct_index": 1},
+      {"prompt": "¿Cómo eran los brazos del Rex?", "options": ["Muy cortitos", "Largos y delgados", "Con alas"], "correct_index": 0},
+      {"prompt": "¿Qué usó el Rex para buscar comida?", "options": ["Sus orejas", "Su cola", "Su gran nariz para olfatear"], "correct_index": 2},
+      {"prompt": "¿Dónde se escondió Ángel Eduardo para observarlo?", "options": ["Detrás de una roca", "Arriba de un árbol", "Dentro de una cueva"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 2,
+    "dino_name": "Triceratops",
+    "dino_emoji": "🦕",
+    "title": "Los tres cuernos amigos",
+    "story": "El Triceratops era un dinosaurio muy especial porque tenía tres cuernos en la cabeza. Dos cuernos largos arriba de los ojos y uno más corto en la nariz. También tenía un enorme collar de hueso que le cubría el cuello como un abanico gigante. Ángel Eduardo lo encontró comiendo tranquilamente en una pradera verde. El Triceratops era herbívoro, es decir, solo comía plantas. Usaba su pico fuerte, parecido al de un loro, para cortar hojas y ramas. Vivía en manadas, así que casi nunca estaba solo. Era del tamaño de un elefante grande y caminaba en cuatro patas robustas. Sus cuernos no eran para asustar, sino para protegerse y para saludar a otros Triceratops. Ese día, un pequeño Triceratops bebé se acercó a Ángel Eduardo con curiosidad. El niño le mostró una hoja fresca y el bebé la mordisqueó feliz. La mamá Triceratops los cuidó de cerca, tranquila y amable. Ángel Eduardo se despidió de sus nuevos amigos de tres cuernos y guardó ese momento en su corazón.",
+    "questions": [
+      {"prompt": "¿Cuántos cuernos tenía el Triceratops?", "options": ["Cinco cuernos", "Un solo cuerno", "Tres cuernos"], "correct_index": 2},
+      {"prompt": "¿Qué comía el Triceratops?", "options": ["Solo plantas, era herbívoro", "Carne y pescado", "Insectos pequeños"], "correct_index": 0},
+      {"prompt": "¿Cómo vivía el Triceratops?", "options": ["Siempre solo", "En manadas", "Bajo el agua"], "correct_index": 1},
+      {"prompt": "¿A qué se parecía su pico?", "options": ["Al de un loro", "Al de un pato", "Al de un pez"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 3,
+    "dino_name": "Estegosaurio",
+    "dino_emoji": "🦕",
+    "title": "Las placas del Estegosaurio",
+    "story": "El Estegosaurio tenía la espalda llena de grandes placas paradas, como si llevara un techo de piedras. Esas placas le servían para calentarse con el sol y para verse más grande. En la punta de su cola tenía cuatro púas afiladas que usaba solo para defenderse. Ángel Eduardo lo miró asombrado mientras el dinosaurio caminaba despacio. El Estegosaurio era herbívoro y comía plantas bajitas, porque su cabeza estaba cerca del suelo. Aunque su cuerpo era grande como un autobús, su cerebro era muy pequeño, del tamaño de una nuez. Vivió hace muchísimo tiempo, en lugares con muchos helechos verdes. Caminaba en cuatro patas y sus patas de atrás eran más largas que las de adelante. Ese día, el Estegosaurio movió sus placas al sol para calentarse un poco. Ángel Eduardo notó que las placas cambiaban de color con la luz. El dinosaurio agitó la cola con calma y siguió mordisqueando hojas. El niño aprendió que este gigante tranquilo solo quería comer y descansar bajo el sol tibio.",
+    "questions": [
+      {"prompt": "¿Para qué le servían las placas de la espalda?", "options": ["Para nadar rápido", "Para calentarse con el sol", "Para volar alto"], "correct_index": 1},
+      {"prompt": "¿Qué tenía el Estegosaurio en la punta de la cola?", "options": ["Cuatro púas afiladas", "Una bola de hueso", "Un cuerno grande"], "correct_index": 0},
+      {"prompt": "¿De qué tamaño era su cerebro?", "options": ["Como una sandía", "Como una nuez, muy pequeño", "Como una pelota de fútbol"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Estegosaurio?", "options": ["Plantas bajitas", "Peces del río", "Otros dinosaurios"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 4,
+    "dino_name": "Braquiosaurio",
+    "dino_emoji": "🦕",
+    "title": "El cuello que tocaba el cielo",
+    "story": "El Braquiosaurio era uno de los dinosaurios más altos que existieron. Tenía un cuello larguísimo que le permitía comer las hojas de los árboles más altos, como una jirafa gigante. Ángel Eduardo tuvo que levantar mucho la cabeza para verlo completo. Este dinosaurio era herbívoro y pasaba casi todo el día comiendo, porque su cuerpo enorme necesitaba mucha comida. Sus patas de adelante eran más largas que las de atrás, algo poco común entre los dinosaurios. Caminaba despacio y con calma, moviendo su largo cuello de un árbol a otro. Vivía cerca de bosques con árboles altos y agua fresca. A pesar de su tamaño gigante, era un animal muy tranquilo y pacífico. Ese día, el Braquiosaurio bajó un poco su cabeza y miró a Ángel Eduardo con ojos amables. El niño le ofreció una rama con hojas verdes y el dinosaurio la tomó con suavidad. Luego levantó de nuevo su cuello hacia el cielo para seguir comiendo. Ángel Eduardo sonrió al ver a ese gigante gentil disfrutar de su almuerzo entre las nubes.",
+    "questions": [
+      {"prompt": "¿A qué animal de hoy se parece el Braquiosaurio por su cuello?", "options": ["A un caballo", "A una jirafa gigante", "A un conejo"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Braquiosaurio?", "options": ["Hojas de árboles altos", "Carne fresca", "Piedras del suelo"], "correct_index": 0},
+      {"prompt": "¿Cómo eran sus patas?", "options": ["Todas del mismo tamaño", "Las de atrás más largas", "Las de adelante más largas"], "correct_index": 2},
+      {"prompt": "¿Cómo era el carácter del Braquiosaurio?", "options": ["Tranquilo y pacífico", "Muy peleador", "Miedoso y rápido"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 5,
+    "dino_name": "Velociraptor",
+    "dino_emoji": "🦖",
+    "title": "El pequeño corredor veloz",
+    "story": "El Velociraptor era un dinosaurio pequeño, más o menos del tamaño de un pavo grande. Aunque era chico, era muy rápido e inteligente. Su nombre significa ladrón veloz, porque corría muy ligero sobre sus dos patas. Ángel Eduardo lo vio moverse entre los arbustos con mucha curiosidad. Lo más sorprendente es que el Velociraptor tenía plumas, ¡como los pájaros de hoy! Esas plumas lo mantenían calientito. Era carnívoro y buscaba animales pequeños para comer. En cada pata tenía una garra especial en forma de gancho que usaba con cuidado. Vivía en zonas secas, parecidas a un desierto con algunas plantas. Los Velociraptores a veces se juntaban para buscar comida en grupo. Ese día, el pequeño dinosaurio ladeó la cabeza y observó a Ángel Eduardo, igual que un pajarito curioso. El niño se quedó muy quieto y sonrió. El Velociraptor dio un saltito, movió sus plumas y salió corriendo veloz entre la arena. Ángel Eduardo aprendió que este dinosaurio era listo, rápido y mucho más parecido a un ave de lo que él imaginaba.",
+    "questions": [
+      {"prompt": "¿De qué tamaño era el Velociraptor?", "options": ["Como un pavo grande", "Como un elefante", "Como una casa"], "correct_index": 0},
+      {"prompt": "¿Qué tenía el Velociraptor en su cuerpo?", "options": ["Escamas de pez", "Plumas, como los pájaros", "Un caparazón duro"], "correct_index": 1},
+      {"prompt": "¿Qué significa su nombre?", "options": ["Cuello largo", "Diente grande", "Ladrón veloz"], "correct_index": 2},
+      {"prompt": "¿Dónde vivía el Velociraptor?", "options": ["En zonas secas como un desierto", "En el fondo del mar", "Dentro de volcanes"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 6,
+    "dino_name": "Anquilosaurio",
+    "dino_emoji": "🦕",
+    "title": "El dinosaurio con armadura",
+    "story": "El Anquilosaurio parecía un tanque viviente. Todo su lomo estaba cubierto de placas duras y bultos de hueso, como una verdadera armadura. Gracias a eso, casi nada podía lastimarlo. Ángel Eduardo pensó que se parecía a un enorme armadillo prehistórico. Lo más famoso de este dinosaurio era su cola, que terminaba en una gran bola de hueso, como un martillo. La usaba solo para defenderse si se sentía en peligro. El Anquilosaurio era herbívoro y comía plantas bajitas del suelo con su boca ancha. Caminaba despacio en cuatro patas cortas y fuertes. Era pesado y muy tranquilo, no le gustaba pelear. Vivía en zonas con muchas plantas verdes y bosques. Ese día, el Anquilosaurio comía hojas cerca de un río. Ángel Eduardo se acercó con cuidado y el dinosaurio ni se asustó, porque se sentía seguro con su armadura. El niño tocó suavemente una de las placas duras de su lomo y sintió que era como una piedra. El Anquilosaurio siguió comiendo tranquilo, protegido dentro de su coraza natural.",
+    "questions": [
+      {"prompt": "¿Qué cubría el lomo del Anquilosaurio?", "options": ["Suaves plumas", "Placas duras y bultos de hueso", "Pelo largo"], "correct_index": 1},
+      {"prompt": "¿Cómo terminaba su cola?", "options": ["En una gran bola de hueso", "En punta afilada", "En forma de abanico"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba su cola?", "options": ["Para nadar", "Para trepar árboles", "Solo para defenderse"], "correct_index": 2},
+      {"prompt": "¿Qué comía el Anquilosaurio?", "options": ["Plantas bajitas del suelo", "Peces del río", "Insectos"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 7,
+    "dino_name": "Diplodocus",
+    "dino_emoji": "🦕",
+    "title": "La cola más larga del mundo",
+    "story": "El Diplodocus era un dinosaurio larguísimo, uno de los más largos que existieron. Tenía un cuello muy largo por delante y una cola aún más larga por detrás, como un látigo. Si se estiraba, podía medir tanto como tres autobuses juntos. Ángel Eduardo quedó con la boca abierta al verlo pasar. Este gigante era herbívoro y comía muchas plantas y hojas para llenar su enorme cuerpo. Sus dientes eran delgados como peines y le servían para arrancar hojas de las ramas. Caminaba en cuatro patas fuertes y movía la cola de un lado a otro. Vivía en llanuras con ríos y muchos árboles. Aunque era gigantesco, el Diplodocus era muy tranquilo y caminaba despacio. Ese día, movió su larga cola con suavidad para espantar unos insectos. Ángel Eduardo caminó a su lado y apenas le llegaba a la altura de una pata. El Diplodocus bajó su cuello, comió unas hojas bajitas y siguió su paseo lento. El niño quedó maravillado con el dinosaurio de la cola más larga que había visto.",
+    "questions": [
+      {"prompt": "¿Cómo era el Diplodocus?", "options": ["Muy pequeño", "Uno de los más largos", "Redondo y bajito"], "correct_index": 1},
+      {"prompt": "¿Cómo eran sus dientes?", "options": ["Delgados como peines", "Grandes como cuchillos", "Planos como piedras"], "correct_index": 0},
+      {"prompt": "¿Qué comía el Diplodocus?", "options": ["Otros dinosaurios", "Pescado", "Plantas y hojas"], "correct_index": 2},
+      {"prompt": "¿Para qué movió su cola ese día?", "options": ["Para espantar insectos", "Para nadar en el río", "Para pelear"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 8,
+    "dino_name": "Espinosaurio",
+    "dino_emoji": "🦖",
+    "title": "El dinosaurio de la vela",
+    "story": "El Espinosaurio era muy grande y tenía algo único en la espalda: una fila de huesos altos que formaban una gran vela, como si llevara un abanico de colores. Esa vela lo hacía verse impresionante y quizás le ayudaba a mantenerse fresco. Ángel Eduardo nunca había visto algo igual. Lo curioso del Espinosaurio es que le encantaba el agua. Pasaba mucho tiempo cerca de los ríos, porque su comida favorita eran los peces grandes. Tenía un hocico largo y angosto, parecido al de un cocodrilo, perfecto para atrapar peces. Era carnívoro, pero ese día estaba tranquilo pescando junto al río. Vivía en lugares cálidos con mucha agua. Sus patas fuertes le ayudaban a caminar por la orilla lodosa. Ángel Eduardo lo observó desde lejos mientras el dinosaurio metía el hocico en el agua. De pronto, el Espinosaurio sacó un pez y lo comió feliz. Luego levantó su gran vela al sol, que brilló con la luz. El niño pensó que era el dinosaurio más elegante y raro que había conocido.",
+    "questions": [
+      {"prompt": "¿Qué tenía el Espinosaurio en la espalda?", "options": ["Una gran vela de huesos", "Un caparazón duro", "Dos alas"], "correct_index": 0},
+      {"prompt": "¿Cuál era su comida favorita?", "options": ["Hojas verdes", "Peces grandes", "Frutas"], "correct_index": 1},
+      {"prompt": "¿A qué se parecía su hocico?", "options": ["Al de un loro", "Al de un elefante", "Al de un cocodrilo"], "correct_index": 2},
+      {"prompt": "¿Dónde pasaba mucho tiempo el Espinosaurio?", "options": ["Cerca de los ríos", "En la cima de montañas", "En cuevas oscuras"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 9,
+    "dino_name": "Pteranodón",
+    "dino_emoji": "🦅",
+    "title": "El que volaba sobre el mar",
+    "story": "El Pteranodón no era exactamente un dinosaurio, sino un reptil volador que vivió en la misma época. Tenía unas alas enormes de piel que se abrían muy anchas, como las de un gran planeador. Cuando estiraba las alas, era más ancho que un carro. Ángel Eduardo miró hacia el cielo y lo vio volar suavemente entre las nubes. En la cabeza tenía una cresta larga que apuntaba hacia atrás, que le ayudaba a girar mientras volaba. El Pteranodón no tenía dientes; su pico era largo y sin dientes, parecido al de un pelícano. Le encantaba volar sobre el mar para pescar peces con su pico. Vivía cerca de las costas y descansaba en los acantilados altos. Casi no movía las alas: usaba el viento para planear y ahorrar energía. Ese día, el Pteranodón bajó cerca del agua, atrapó un pez y volvió a subir alto. Ángel Eduardo lo siguió con la mirada, deseando poder volar así de libre. El reptil volador dio una vuelta en el aire y desapareció entre las nubes del cielo.",
+    "questions": [
+      {"prompt": "¿Qué era el Pteranodón?", "options": ["Un pez gigante", "Un reptil volador", "Un dinosaurio marino"], "correct_index": 1},
+      {"prompt": "¿Cómo era su pico?", "options": ["Largo y sin dientes", "Lleno de dientes filosos", "Corto y redondo"], "correct_index": 0},
+      {"prompt": "¿Qué comía el Pteranodón?", "options": ["Hojas de árboles", "Insectos del bosque", "Peces que pescaba en el mar"], "correct_index": 2},
+      {"prompt": "¿Cómo volaba para ahorrar energía?", "options": ["Planeando con el viento", "Moviendo mucho las alas", "Corriendo por la playa"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 10,
+    "dino_name": "Parasaurolophus",
+    "dino_emoji": "🦕",
+    "title": "La trompeta de la cabeza",
+    "story": "El Parasaurolophus tenía algo muy divertido: una cresta larga y curva que salía de su cabeza, como un tubo hueco hacia atrás. Con esa cresta podía hacer sonidos, parecidos a los de una trompeta. Así llamaba a sus amigos y avisaba si había algún peligro. Ángel Eduardo escuchó su llamado profundo y se acercó con curiosidad. Este dinosaurio era herbívoro y comía plantas, hojas y ramitas. Tenía un pico ancho, como un pato, para arrancar la comida. Podía caminar en dos o en cuatro patas, según lo que necesitara. Cuando quería correr, usaba sus dos patas de atrás. Vivía en manadas cerca de bosques y ríos tranquilos. Ese día, varios Parasaurolophus comían juntos en un prado verde. De pronto, uno de ellos sopló su cresta y todos levantaron la cabeza al mismo tiempo. Ángel Eduardo se rio al escuchar aquel sonido tan gracioso, como una gran trompeta. Luego la manada siguió comiendo en paz bajo la luz del atardecer. El niño se despidió feliz, guardando en su memoria a todos los dinosaurios que había conocido.",
+    "questions": [
+      {"prompt": "¿Qué tenía el Parasaurolophus en la cabeza?", "options": ["Una cresta larga y curva", "Tres cuernos", "Una bola de hueso"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba su cresta?", "options": ["Para nadar", "Para hacer sonidos como trompeta", "Para volar"], "correct_index": 1},
+      {"prompt": "¿A qué se parecía su pico?", "options": ["Al de un águila", "Al de un cocodrilo", "Al de un pato"], "correct_index": 2},
+      {"prompt": "¿Cómo vivía el Parasaurolophus?", "options": ["En manadas", "Siempre solo", "Bajo el agua"], "correct_index": 0}
+    ]
+  }
+]

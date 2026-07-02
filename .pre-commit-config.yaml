@@ -1,0 +1,75 @@
+# Corre en CADA commit: lint + format + type-check + TODOS los tests (backend y frontend).
+# Instalar una vez:  pip install pre-commit && pre-commit install
+# Requiere: venv del backend con `pip install -e "backend[dev]"` y `npm install` en frontend.
+default_language_version:
+  python: python3
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+
+  - repo: local
+    hooks:
+      # ---------- Backend (Python) ----------
+      - id: ruff-lint
+        name: ruff · lint (backend)
+        entry: bash -c 'cd backend && ruff check .'
+        language: system
+        types: [python]
+        pass_filenames: false
+
+      - id: ruff-format
+        name: ruff · format (backend)
+        entry: bash -c 'cd backend && ruff format --check .'
+        language: system
+        types: [python]
+        pass_filenames: false
+
+      - id: mypy
+        name: mypy · type-check (backend)
+        entry: bash -c 'cd backend && mypy app'
+        language: system
+        types: [python]
+        pass_filenames: false
+
+      - id: pytest
+        name: pytest · TODOS los tests (backend)
+        entry: bash -c 'cd backend && pytest'
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      # ---------- Frontend (React) ----------
+      - id: eslint
+        name: eslint · lint (frontend)
+        entry: bash -c 'cd frontend && npm run lint'
+        language: system
+        files: ^frontend/
+        pass_filenames: false
+
+      - id: prettier
+        name: prettier · format (frontend)
+        entry: bash -c 'cd frontend && npm run format:check'
+        language: system
+        files: ^frontend/
+        pass_filenames: false
+
+      - id: tsc
+        name: tsc · type-check (frontend)
+        entry: bash -c 'cd frontend && npm run typecheck'
+        language: system
+        files: ^frontend/
+        pass_filenames: false
+
+      - id: vitest
+        name: vitest · TODOS los tests (frontend)
+        entry: bash -c 'cd frontend && npm run test:run'
+        language: system
+        pass_filenames: false
+        always_run: true

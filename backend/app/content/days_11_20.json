@@ -1,0 +1,131 @@
+[
+  {
+    "day_number": 11,
+    "dino_name": "Alosaurio",
+    "dino_emoji": "🦖",
+    "title": "El Alosaurio curioso",
+    "story": "Una mañana soleada, Ángel Eduardo caminaba entre helechos gigantes cuando vio un Alosaurio muy curioso. El Alosaurio era un dinosaurio grande, del tamaño de un autobús, y caminaba en dos patas fuertes. Tenía dos crestas pequeñas sobre los ojos, como cejas de piedra. Vivió hace muchísimos años, en un lugar que hoy llamamos América del Norte. Era un cazador, pero también le gustaba oler el aire para descubrir todo a su alrededor. El Alosaurio movía la cabeza de un lado a otro, olfateando las flores tempranas. Ángel Eduardo se quedó quietito detrás de una roca y observó con calma. El dinosaurio tenía brazos cortos, pero manos con garras que usaba para sostener su comida. Le gustaba comer carne y a veces buscaba peces cerca del río. Cuando el sol subió más alto, el Alosaurio bostezó y se echó a descansar bajo un árbol enorme. Ángel Eduardo sonrió y anotó todo en su libreta de explorador. Qué día tan especial había sido.",
+    "questions": [
+      {"prompt": "¿De qué tamaño era el Alosaurio?", "options": ["Del tamaño de un ratón", "Del tamaño de un autobús", "Del tamaño de una hormiga"], "correct_index": 1},
+      {"prompt": "¿Qué tenía el Alosaurio sobre los ojos?", "options": ["Dos crestas pequeñas", "Un sombrero grande", "Dos cuernos largos"], "correct_index": 0},
+      {"prompt": "¿Qué le gustaba comer al Alosaurio?", "options": ["Solo frutas dulces", "Solo hojas verdes", "Carne y a veces peces"], "correct_index": 2},
+      {"prompt": "¿Dónde se escondió Ángel Eduardo para observar?", "options": ["Dentro de un río", "Detrás de una roca", "Arriba de una nube"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 12,
+    "dino_name": "Iguanodón",
+    "dino_emoji": "🦕",
+    "title": "El pulgar mágico del Iguanodón",
+    "story": "El Iguanodón era un dinosaurio muy tranquilo y comía plantas todo el día. Vivió hace millones de años en lugares que hoy son Europa y otras tierras lejanas. Lo más curioso del Iguanodón era su pulgar. En cada mano tenía un pulgar en forma de púa afilada, como un pequeño pico. Los científicos creen que lo usaba para defenderse o para partir plantas duras. Ángel Eduardo aprendió que el Iguanodón podía caminar en dos patas o en cuatro, según quisiera. Era grande y pesado, pero muy amable con los demás dinosaurios. Le encantaba comer hojas, ramas y frutos que alcanzaba con su boca ancha, parecida a un pico de pato. Cuando encontraba un árbol lleno de hojas, se paraba en dos patas para llegar bien alto. El Iguanodón vivía en grupos, así se sentía seguro y feliz. Al caer la tarde, todo el grupo caminaba junto hacia el río para beber agua fresca. Ángel Eduardo pensó que el Iguanodón era como un gigante gentil del pasado.",
+    "questions": [
+      {"prompt": "¿Qué comía el Iguanodón?", "options": ["Plantas y hojas", "Pescado del río", "Insectos pequeños"], "correct_index": 0},
+      {"prompt": "¿Qué tenía de curioso en sus manos?", "options": ["Cinco dedos largos", "Un pulgar en forma de púa", "Garras de metal"], "correct_index": 1},
+      {"prompt": "¿Cómo podía caminar el Iguanodón?", "options": ["Solo saltando", "Solo nadando", "En dos patas o en cuatro"], "correct_index": 2},
+      {"prompt": "¿Cómo vivía el Iguanodón?", "options": ["En grupos", "Siempre solo", "Bajo el agua"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 13,
+    "dino_name": "Compsognathus",
+    "dino_emoji": "🦖",
+    "title": "El dino del tamaño de una gallina",
+    "story": "El Compsognathus era uno de los dinosaurios más pequeños que existieron. Era casi del tamaño de una gallina y podía correr muy rápido con sus patitas delgadas. Ángel Eduardo se rio al verlo saltar entre las piedras, veloz como un rayo. Este dinosaurio vivió hace muchísimo tiempo en tierras que hoy son Europa. Aunque era chiquito, era muy listo y ágil. Comía insectos, lagartijas pequeñas y otros animalitos que atrapaba con su boca llena de dientes diminutos. Tenía una cola larga que lo ayudaba a mantener el equilibrio mientras corría. El Compsognathus era ligero como una pluma y sus huesos eran huecos por dentro. Le gustaba buscar comida al amanecer, cuando el sol apenas salía. Ángel Eduardo lo siguió un ratito, con mucho cuidado de no asustarlo. El pequeño dinosaurio se detuvo, giró la cabeza y lo miró con ojos curiosos. Luego, en un parpadeo, salió corriendo entre los arbustos. Ángel Eduardo aplaudió feliz. Nunca había visto un dinosaurio tan pequeño y tan veloz.",
+    "questions": [
+      {"prompt": "¿De qué tamaño era el Compsognathus?", "options": ["Del tamaño de un elefante", "Casi del tamaño de una gallina", "Del tamaño de una casa"], "correct_index": 1},
+      {"prompt": "¿Qué comía este dinosaurio?", "options": ["Hojas y flores", "Frutas grandes", "Insectos y lagartijas pequeñas"], "correct_index": 2},
+      {"prompt": "¿Para qué usaba su cola larga?", "options": ["Para mantener el equilibrio", "Para nadar en el mar", "Para colgarse de los árboles"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 14,
+    "dino_name": "Apatosaurio",
+    "dino_emoji": "🦕",
+    "title": "El gigante de cuello largo",
+    "story": "El Apatosaurio era un dinosaurio enorme, de cuello muy largo y cola aún más larga. Era tan grande que su cabeza se elevaba muy alto, casi como un árbol. Vivió hace millones de años en tierras que hoy son América del Norte. Ángel Eduardo tuvo que levantar mucho la cabeza para verlo completo. Este gigante comía solo plantas y pasaba casi todo el día masticando hojas de los árboles altos. Con su cuello largo alcanzaba las ramas más lejanas sin moverse mucho. El Apatosaurio caminaba despacio sobre cuatro patas gruesas, como columnas fuertes. Aunque era gigante, era muy pacífico y bondadoso. Vivía en grupos y cuidaba de sus crías con cariño. Su cola larga podía moverse como un látigo para espantar molestias. Cuando caminaba, la tierra temblaba suavemente bajo sus pasos. Ángel Eduardo sintió el suelo vibrar y se sujetó a un tronco, riéndose. El Apatosaurio lo miró tranquilo, siguió comiendo y luego se alejó despacio hacia el bosque verde.",
+    "questions": [
+      {"prompt": "¿Qué tenía muy largo el Apatosaurio?", "options": ["Las orejas", "El cuello y la cola", "Los dientes"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Apatosaurio?", "options": ["Solo plantas", "Carne de otros dinos", "Peces del río"], "correct_index": 0},
+      {"prompt": "¿Sobre cuántas patas caminaba?", "options": ["Dos patas", "Seis patas", "Cuatro patas"], "correct_index": 2},
+      {"prompt": "¿Cómo era el Apatosaurio con sus crías?", "options": ["Las cuidaba con cariño", "Las dejaba solas", "No tenía crías"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 15,
+    "dino_name": "Arqueopterix",
+    "dino_emoji": "🦅",
+    "title": "El dino que tenía plumas",
+    "story": "El Arqueopterix era un animal muy especial, mitad dinosaurio y mitad ave. Tenía plumas suaves y alas, pero también dientes pequeños y una cola con huesos, como los dinosaurios. Era casi del tamaño de un cuervo. Ángel Eduardo abrió mucho los ojos al ver sus plumas brillar bajo el sol. Este animalito vivió hace muchísimos años en tierras que hoy son Europa. Los científicos dicen que el Arqueopterix es como un puente entre los dinosaurios y las aves de hoy. Podía planear entre los árboles y quizás dar pequeños vuelos cortos. Comía insectos y animalitos pequeños que encontraba entre las hojas. Tenía garras en las alas que usaba para trepar y sostenerse. Sus plumas eran de colores y lo ayudaban a mantenerse calientito. Ángel Eduardo lo vio saltar de una rama a otra, batiendo sus alas con alegría. Pensó que el Arqueopterix era como el abuelo lejano de todos los pajaritos que hoy cantan en los árboles. Qué descubrimiento tan bonito.",
+    "questions": [
+      {"prompt": "¿Qué tenía de especial el Arqueopterix?", "options": ["Era mitad dinosaurio y mitad ave", "Vivía bajo el agua", "Era gigante como una montaña"], "correct_index": 0},
+      {"prompt": "¿De qué tamaño era, más o menos?", "options": ["De un elefante", "Casi de un cuervo", "De una ballena"], "correct_index": 1},
+      {"prompt": "¿Qué comía el Arqueopterix?", "options": ["Hojas grandes", "Rocas y arena", "Insectos y animalitos pequeños"], "correct_index": 2},
+      {"prompt": "¿Con qué animales de hoy está relacionado?", "options": ["Con los peces", "Con las aves", "Con los gatos"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 16,
+    "dino_name": "Carnotauro",
+    "dino_emoji": "🦖",
+    "title": "El dino con cuernos de toro",
+    "story": "El Carnotauro tenía un nombre curioso que significa toro carnívoro. Lo llamaban así porque tenía dos cuernos sobre los ojos, parecidos a los de un toro. Ángel Eduardo pensó que se veía muy simpático con esos cuernitos. Este dinosaurio vivió hace millones de años en tierras que hoy son América del Sur, en un lugar cercano a su casa. Era grande y caminaba muy rápido en dos patas largas y fuertes. Tenía brazos muy, muy cortos, más pequeños que los de otros dinosaurios. Su piel estaba cubierta de bultitos, como piedritas suaves. El Carnotauro corría veloz para buscar su comida y le gustaba explorar los campos abiertos. Aunque era un cazador, esa tarde solo caminaba tranquilo bajo el sol dorado. Ángel Eduardo lo observó desde lejos, contando sus pasos veloces. El Carnotauro movió la cabeza, mostró sus cuernitos y siguió su camino. El pequeño explorador guardó su libreta y dijo adiós con la mano al dino corredor más rápido que había visto.",
+    "questions": [
+      {"prompt": "¿Qué significa el nombre Carnotauro?", "options": ["Toro carnívoro", "Pájaro veloz", "Pez dormilón"], "correct_index": 0},
+      {"prompt": "¿Qué tenía sobre los ojos?", "options": ["Dos antenas", "Dos cuernos", "Dos alas"], "correct_index": 1},
+      {"prompt": "¿Cómo eran sus brazos?", "options": ["Muy largos", "Del tamaño de alas", "Muy cortos"], "correct_index": 2},
+      {"prompt": "¿En qué se destacaba el Carnotauro?", "options": ["En correr muy rápido", "En nadar hondo", "En volar alto"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 17,
+    "dino_name": "Deinonychus",
+    "dino_emoji": "🦖",
+    "title": "La garra saltarina",
+    "story": "El Deinonychus era un dinosaurio mediano, listo y muy ágil. Su nombre significa garra terrible, porque tenía una garra grande y curva en cada pata trasera. Ángel Eduardo notó que caminaba levantando esa garra especial para no gastarla. Este dinosaurio vivió hace millones de años en tierras que hoy son América del Norte. Era del tamaño de una persona grande y estaba cubierto de plumas suaves, aunque no podía volar. El Deinonychus era muy inteligente y a veces buscaba comida junto a otros de su grupo. Tenía una cola tiesa que lo ayudaba a girar y saltar con equilibrio. Comía carne y era rápido como un rayo cuando corría entre los árboles. Sus manos tenían dedos largos con garras para sujetar bien las cosas. Esa mañana, el Deinonychus saltó de una roca a otra con mucha gracia. Ángel Eduardo aplaudió su salto perfecto. El dinosaurio ladeó la cabeza, curioso, y luego corrió veloz hacia el bosque, dejando huellas divertidas en la tierra.",
+    "questions": [
+      {"prompt": "¿Qué significa el nombre Deinonychus?", "options": ["Cola larga", "Garra terrible", "Diente pequeño"], "correct_index": 1},
+      {"prompt": "¿Dónde tenía su garra grande y curva?", "options": ["En la cabeza", "En la cola", "En cada pata trasera"], "correct_index": 2},
+      {"prompt": "¿Qué cubría el cuerpo del Deinonychus?", "options": ["Plumas suaves", "Escamas de pez", "Pelo largo"], "correct_index": 0},
+      {"prompt": "¿Para qué usaba su cola tiesa?", "options": ["Para nadar rápido", "Para girar y saltar con equilibrio", "Para cavar túneles"], "correct_index": 1}
+    ]
+  },
+  {
+    "day_number": 18,
+    "dino_name": "Gallimimus",
+    "dino_emoji": "🦕",
+    "title": "El dino veloz como avestruz",
+    "story": "El Gallimimus era un dinosaurio que parecía un avestruz gigante. Tenía patas largas y delgadas, perfectas para correr muy, muy rápido. Ángel Eduardo pensó que era el corredor más veloz de todos. Este dinosaurio vivió hace millones de años en tierras que hoy son Asia, en un desierto lejano. Tenía un cuello largo, ojos grandes y un pico sin dientes, parecido al de un ave. Con ese pico comía plantas, semillas, insectos y pequeños animalitos. El Gallimimus vivía en grupos y corría junto a sus amigos por los campos abiertos. Sus brazos eran ligeros y su cola larga le daba equilibrio al correr. Cuando sentía peligro, no peleaba: prefería escapar corriendo rapidísimo. Esa tarde, un grupo de Gallimimus cruzó la llanura levantando polvo dorado. Ángel Eduardo los vio pasar como flechas veloces y contó hasta diez. Le pareció increíble que un dinosaurio pudiera correr casi tan rápido como un caballo. Guardó su libreta y corrió también, imitando al veloz Gallimimus.",
+    "questions": [
+      {"prompt": "¿A qué animal de hoy se parecía el Gallimimus?", "options": ["A un avestruz", "A un elefante", "A una tortuga"], "correct_index": 0},
+      {"prompt": "¿Cómo era su pico?", "options": ["Lleno de dientes filosos", "Sin dientes, como el de un ave", "Redondo como una pelota"], "correct_index": 1},
+      {"prompt": "¿Qué hacía cuando sentía peligro?", "options": ["Peleaba con fuerza", "Se escondía bajo el agua", "Escapaba corriendo rápido"], "correct_index": 2},
+      {"prompt": "¿Dónde vivió el Gallimimus?", "options": ["En un desierto de Asia", "En el fondo del mar", "En una montaña de hielo"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 19,
+    "dino_name": "Plateosaurio",
+    "dino_emoji": "🦕",
+    "title": "El comelón de cuello largo",
+    "story": "El Plateosaurio fue uno de los primeros dinosaurios grandes que existieron. Vivió hace muchísimos años, mucho antes que otros gigantes, en tierras que hoy son Europa. Tenía un cuello largo, una cola fuerte y una cabeza pequeña. Ángel Eduardo aprendió que este dinosaurio comía solo plantas y le encantaba masticar hojas todo el día. Podía pararse en dos patas para alcanzar las ramas más altas de los árboles. Sus manos tenían un pulgar con una garra que usaba para jalar las plantas hacia su boca. El Plateosaurio era del largo de un camión pequeño y caminaba tranquilo por los valles verdes. Vivía en grupos y viajaba buscando lugares llenos de comida fresca. Esa mañana, Ángel Eduardo lo vio estirar el cuello hacia un árbol frondoso. El dinosaurio arrancó un montón de hojas y masticó feliz, muy despacito. Luego bajó la cabeza y saludó con calma al pequeño explorador. Ángel Eduardo anotó que el Plateosaurio era un abuelito de los dinosaurios de cuello largo.",
+    "questions": [
+      {"prompt": "¿Qué comía el Plateosaurio?", "options": ["Solo plantas", "Carne de peces", "Insectos y gusanos"], "correct_index": 0},
+      {"prompt": "¿Qué usaba su pulgar con garra?", "options": ["Para volar", "Para jalar las plantas a su boca", "Para cavar cuevas"], "correct_index": 1},
+      {"prompt": "¿De qué largo era el Plateosaurio?", "options": ["De una cuchara", "De un zapato", "De un camión pequeño"], "correct_index": 2},
+      {"prompt": "¿Cómo alcanzaba las ramas altas?", "options": ["Se paraba en dos patas", "Trepaba los árboles", "Volaba hasta ellas"], "correct_index": 0}
+    ]
+  },
+  {
+    "day_number": 20,
+    "dino_name": "Coelophysis",
+    "dino_emoji": "🦖",
+    "title": "El dino ligero y veloz",
+    "story": "El Coelophysis era un dinosaurio delgado, ligero y muy rápido. Su nombre significa forma hueca, porque sus huesos eran huecos por dentro, como los de las aves. Por eso pesaba poquito y podía correr veloz. Ángel Eduardo lo vio moverse con gracia entre las rocas del desierto. Este dinosaurio vivió hace muchísimos años en tierras que hoy son América del Norte. Era del largo de una persona acostada, con cuello largo, cola larga y patas delgadas. Comía animalitos pequeños, insectos y lagartijas que atrapaba con su boca llena de dientes chiquitos. El Coelophysis vivía en grupos grandes y caminaba junto a muchos compañeros. Con sus ojos grandes veía muy bien, incluso cuando bajaba el sol. Esa tarde, un grupo de Coelophysis corrió entre los arbustos buscando comida. Ángel Eduardo los contó y llegó hasta veinte. Le pareció increíble que un dinosaurio tan antiguo fuera tan ágil y alegre. Antes de irse, guardó su libreta y prometió volver pronto a visitar a sus amigos dinosaurios.",
+    "questions": [
+      {"prompt": "¿Por qué el Coelophysis pesaba poquito?", "options": ["Porque comía poco", "Porque sus huesos eran huecos", "Porque era muy pequeño"], "correct_index": 1},
+      {"prompt": "¿Qué significa su nombre?", "options": ["Forma hueca", "Diente grande", "Cola corta"], "correct_index": 0},
+      {"prompt": "¿Qué comía el Coelophysis?", "options": ["Hojas y frutos", "Rocas del desierto", "Insectos y lagartijas"], "correct_index": 2},
+      {"prompt": "¿Cómo vivía el Coelophysis?", "options": ["En grupos grandes", "Siempre solo", "Debajo del agua"], "correct_index": 0}
+    ]
+  }
+]

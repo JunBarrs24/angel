@@ -1,0 +1,10 @@
+# Dependencias de RUNTIME para el despliegue (Railway/Nixpacks).
+# El código corre desde este directorio, así que app/content/*.json y
+# app/store_catalog.json se leen relativos a la fuente (no hace falta instalar el
+# paquete). Para desarrollo/tests usa pyproject.toml (incluye las de [dev]).
+fastapi>=0.110
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0
+pydantic>=2.6
+pydantic-settings>=2.2
+psycopg2-binary>=2.9

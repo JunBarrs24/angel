@@ -19,6 +19,10 @@ class Settings(BaseSettings):
 
     child_name: str = "Ángel Eduardo"
 
+    # Ruta al catálogo de la tienda (JSON). Vacío => app/store_catalog.json.
+    # Permite apuntar a otro archivo por despliegue sin tocar el código.
+    store_catalog_path: str = ""
+
     @property
     def resolved_database_url(self) -> str:
         url = self.database_url.strip()

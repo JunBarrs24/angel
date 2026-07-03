@@ -56,16 +56,54 @@ def test_today_fuera_de_rango_404(client: TestClient) -> None:
     assert r.status_code == 404
 
 
-def test_day_y_bloqueo_403(client: TestClient) -> None:
-    # El día 2 está disponible cuando as_of == su fecha.
-    ok = client.get("/api/day/2", params={"child_id": 1, "as_of": AS_OF_DAY2})
-    assert ok.status_code == 200
+def test_day_bloqueo_por_progreso(client: TestClient) -> None:
+    # El día 1 siempre está disponible.
+    assert client.get("/api/day/1", params={"child_id": 1, "as_of": AS_OF_DAY1}).status_code == 200
 
-    # ...pero bloqueado si aún no llega su fecha.
-    locked = client.get("/api/day/2", params={"child_id": 1, "as_of": AS_OF_DAY1})
-    assert locked.status_code == 403
+    # El día 2 está bloqueado mientras el día 1 no esté completado (sin importar la fecha).
+    assert client.get("/api/day/2", params={"child_id": 1, "as_of": AS_OF_DAY2}).status_code == 403
+
+    # Al completar el día 1, se desbloquea el día 2.
+    client.post(
+        "/api/reading",
+        json={"child_id": 1, "day_number": 1, "last_word_index": 30, "finished": True},
+    )
+    client.post(
+        "/api/answers/complete",
+        json={
+            "child_id": 1,
+            "day_number": 1,
+            "comprehension_answers": [0, 2, 1],
+            "math_answers": _correct_math(1),
+        },
+    )
+    assert client.get("/api/day/2", params={"child_id": 1, "as_of": AS_OF_DAY1}).status_code == 200
 
     assert client.get("/api/day/99", params={"child_id": 1}).status_code == 404
+
+
+def test_completion_incluye_respuestas_para_repaso(client: TestClient) -> None:
+    """El día completado devuelve lo que respondió el niño (para el repaso del adulto)."""
+    client.post(
+        "/api/reading",
+        json={"child_id": 1, "day_number": 1, "last_word_index": 30, "finished": True},
+    )
+    comprehension = [0, 1, 1]  # una mal a propósito
+    math = _correct_math(1)
+    client.post(
+        "/api/answers/complete",
+        json={
+            "child_id": 1,
+            "day_number": 1,
+            "comprehension_answers": comprehension,
+            "math_answers": math,
+        },
+    )
+
+    day = client.get("/api/day/1", params={"child_id": 1, "as_of": AS_OF_DAY1}).json()
+    assert day["completion"] is not None
+    assert day["completion"]["comprehension_answers"] == comprehension
+    assert day["completion"]["math_answers"] == math
 
 
 def test_map(client: TestClient) -> None:

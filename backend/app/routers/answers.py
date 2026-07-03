@@ -114,6 +114,8 @@ def complete_day(payload: CompleteIn, db: Session = Depends(get_db)) -> Complete
             questions_total=q_total,
             math_correct=m_correct,
             math_total=m_total,
+            comprehension_answers=list(payload.comprehension_answers),
+            math_answers=list(payload.math_answers),
         )
     )
     db.commit()

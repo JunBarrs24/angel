@@ -1,0 +1,37 @@
+{
+  "_comment": "Catálogo de la tienda. Editable por despliegue: cambia costos, títulos o agrega premios. 'cost' es en estrellas; 'color' es un tema visual (amarillo|morado|azul|verde|naranja|rosa).",
+  "items": [
+    {
+      "key": "snack",
+      "emoji": "🍿",
+      "title": "Doritos o galletas",
+      "description": "Un antojito rico de la tienda",
+      "cost": 5,
+      "color": "amarillo"
+    },
+    {
+      "key": "robux",
+      "emoji": "🎮",
+      "title": "Robux",
+      "description": "Monedas para tus juegos",
+      "cost": 21,
+      "color": "morado"
+    },
+    {
+      "key": "toy_small",
+      "emoji": "🧸",
+      "title": "Juguete pequeño",
+      "description": "Una sorpresa chiquita",
+      "cost": 48,
+      "color": "azul"
+    },
+    {
+      "key": "toy_big",
+      "emoji": "🎁",
+      "title": "Juguete grande",
+      "description": "¡El gran premio de la aventura!",
+      "cost": 80,
+      "color": "verde"
+    }
+  ]
+}

@@ -94,4 +94,26 @@ class DayCompletion(Base):
     questions_total: Mapped[int] = mapped_column(default=0)
     math_correct: Mapped[int] = mapped_column(default=0)
     math_total: Mapped[int] = mapped_column(default=0)
+    # Respuestas que dio el niño (para que un adulto pueda repasar lo que hizo).
+    comprehension_answers: Mapped[list[int]] = mapped_column(JSON, default=list)
+    math_answers: Mapped[list[str]] = mapped_column(JSON, default=list)
     completed_at: Mapped[datetime] = mapped_column(server_default=func.now())
+
+
+class Redemption(Base):
+    """Un canje en la tienda: el niño gastó estrellas por un premio real.
+
+    Guardamos una copia del título/emoji/costo del momento, para que el historial
+    se mantenga aunque luego cambien los precios del catálogo.
+    """
+
+    __tablename__ = "redemption"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    child_id: Mapped[int] = mapped_column(ForeignKey("child.id"))
+    item_key: Mapped[str]
+    title: Mapped[str]
+    emoji: Mapped[str] = mapped_column(default="🎁")
+    cost: Mapped[int] = mapped_column(default=0)
+    fulfilled: Mapped[bool] = mapped_column(default=False)
+    created_at: Mapped[datetime] = mapped_column(server_default=func.now())

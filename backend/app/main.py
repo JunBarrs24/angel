@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
 from .database import create_all
-from .routers import answers, challenges, profile, progress, reading
+from .routers import answers, challenges, profile, progress, reading, store
 
 
 @asynccontextmanager
@@ -34,6 +34,7 @@ app.include_router(challenges.router, prefix="/api")
 app.include_router(reading.router, prefix="/api")
 app.include_router(answers.router, prefix="/api")
 app.include_router(progress.router, prefix="/api")
+app.include_router(store.router, prefix="/api")
 
 
 @app.get("/api/health", tags=["health"])

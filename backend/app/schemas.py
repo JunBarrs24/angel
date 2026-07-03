@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, datetime
 
 from pydantic import BaseModel, ConfigDict
 
@@ -50,6 +50,9 @@ class CompletionOut(BaseModel):
     questions_total: int
     math_correct: int
     math_total: int
+    # Lo que respondió el niño, para el repaso de un adulto (solo lectura).
+    comprehension_answers: list[int] = []
+    math_answers: list[str] = []
 
 
 class DayChallengeOut(BaseModel):
@@ -149,7 +152,9 @@ class CompleteResultOut(BaseModel):
 
 # ----- Progreso -----
 class ProgressOut(BaseModel):
-    total_stars: int
+    total_stars: int  # estrellas GANADAS en total (histórico)
+    stars_spent: int  # gastadas en la tienda
+    stars_available: int  # disponibles para gastar (ganadas - gastadas)
     streak: int
     best_streak: int
     days_completed: int
@@ -158,3 +163,44 @@ class ProgressOut(BaseModel):
     badges: list[BadgeOut]
     game_start: date
     game_end: date
+
+
+# ----- Tienda -----
+class StoreItemOut(BaseModel):
+    key: str
+    emoji: str
+    title: str
+    description: str
+    cost: int
+    color: str
+
+
+class RedemptionOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: int
+    item_key: str
+    title: str
+    emoji: str
+    cost: int
+    fulfilled: bool
+    created_at: datetime
+
+
+class StoreOut(BaseModel):
+    items: list[StoreItemOut]
+    stars_earned: int
+    stars_spent: int
+    stars_available: int
+    redemptions: list[RedemptionOut]
+
+
+class PurchaseIn(BaseModel):
+    child_id: int
+    item_key: str
+
+
+class PurchaseResultOut(BaseModel):
+    redemption: RedemptionOut
+    stars_earned: int
+    stars_spent: int
+    stars_available: int

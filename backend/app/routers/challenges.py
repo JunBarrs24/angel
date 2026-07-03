@@ -35,6 +35,7 @@ def _build_day_out(
 ) -> DayChallengeOut:
     reading = services.get_reading_session(db, child_id, challenge.id)
     completion = services.get_completion(db, child_id, challenge.id)
+    locked = services.is_locked(db, child_id, challenge)
     return DayChallengeOut(
         day_number=challenge.day_number,
         date=challenge.date,
@@ -61,12 +62,15 @@ def _build_day_out(
                 questions_total=completion.questions_total,
                 math_correct=completion.math_correct,
                 math_total=completion.math_total,
+                comprehension_answers=completion.comprehension_answers or [],
+                math_answers=completion.math_answers or [],
             )
             if completion
             else None
         ),
-        is_today=challenge.date == today,
-        is_locked=services.is_locked(challenge, today),
+        # "Hoy" = el reto actual jugable (desbloqueado y todavía sin completar).
+        is_today=(completion is None) and not locked,
+        is_locked=locked,
     )
 
 
@@ -98,8 +102,11 @@ def get_day(
     challenge = services.get_challenge_by_day(db, day_number)
     if challenge is None:
         raise HTTPException(status_code=404, detail="Ese día no existe")
-    if services.is_locked(challenge, today):
-        raise HTTPException(status_code=403, detail="Ese planeta todavía está bloqueado")
+    if services.is_locked(db, child_id, challenge):
+        raise HTTPException(
+            status_code=403,
+            detail="Ese planeta todavía está bloqueado: primero termina el día anterior.",
+        )
     return _build_day_out(db, challenge, child_id, today)
 
 
@@ -114,6 +121,7 @@ def get_map(
     completed_ids = set(
         db.scalars(select(DayCompletion.day_challenge_id).where(DayCompletion.child_id == child_id))
     )
+    completed_days = {c.day_number for c in challenges if c.id in completed_ids}
     stars_by_id = {
         c.day_challenge_id: c.stars
         for c in db.scalars(select(DayCompletion).where(DayCompletion.child_id == child_id))
@@ -125,7 +133,7 @@ def get_map(
             dino_name=c.dino_name,
             dino_emoji=c.dino_emoji,
             title=c.title,
-            status=services.day_status(c, today, c.id in completed_ids),
+            status=services.day_status(c, completed_ids, completed_days),
             stars=stars_by_id.get(c.id, 0),
         )
         for c in challenges

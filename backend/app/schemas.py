@@ -18,6 +18,7 @@ class ChildOut(BaseModel):
     id: int
     name: str
     avatar: str
+    code: str | None = None
 
 
 # ----- Contenido del día -----

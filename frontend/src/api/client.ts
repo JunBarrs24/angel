@@ -73,6 +73,10 @@ export const api = {
     return request<Child>(`/api/child/${childId}`);
   },
 
+  getChildByCode(code: string): Promise<Child> {
+    return request<Child>(`/api/child/by-code/${encodeURIComponent(code)}`);
+  },
+
   getMap(childId: number, asOf?: string): Promise<MapData> {
     return request<MapData>(withParams("/api/map", { child_id: childId, as_of: asOf }));
   },

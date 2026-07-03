@@ -38,6 +38,24 @@ def test_perfil_crear_y_leer(client: TestClient) -> None:
     assert client.get("/api/child/9999").status_code == 404
 
 
+def test_vincular_por_codigo(client: TestClient) -> None:
+    # Al crear un explorador se genera su código.
+    child = client.post("/api/child", json={"name": "Ángel", "avatar": "rex"}).json()
+    code = child["code"]
+    assert isinstance(code, str) and len(code) == 5
+
+    # Otro dispositivo lo vincula por código y obtiene el MISMO explorador.
+    r = client.get(f"/api/child/by-code/{code}")
+    assert r.status_code == 200
+    assert r.json()["id"] == child["id"]
+
+    # Es insensible a mayúsculas/minúsculas.
+    assert client.get(f"/api/child/by-code/{code.lower()}").status_code == 200
+
+    # Un código inexistente devuelve 404.
+    assert client.get("/api/child/by-code/ZZZZZ").status_code == 404
+
+
 def test_today(client: TestClient) -> None:
     r = client.get("/api/today", params={"child_id": 1, "as_of": AS_OF_DAY1})
     assert r.status_code == 200

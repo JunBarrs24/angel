@@ -34,3 +34,25 @@ def create_all() -> None:
     from . import models  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
+    _ensure_child_code()
+
+
+def _ensure_child_code() -> None:
+    """Migración suave: agrega child.code si falta y genera códigos faltantes.
+
+    Sirve para bases ya desplegadas (SQLite o Postgres) sin usar Alembic.
+    """
+    from sqlalchemy import inspect, text
+
+    columns = {col["name"] for col in inspect(engine).get_columns("child")}
+    if "code" not in columns:
+        with engine.begin() as conn:
+            conn.execute(text("ALTER TABLE child ADD COLUMN code VARCHAR"))
+
+    from . import services
+
+    db = SessionLocal()
+    try:
+        services.backfill_child_codes(db)
+    finally:
+        db.close()

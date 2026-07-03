@@ -2,14 +2,47 @@
 
 from __future__ import annotations
 
+import secrets
 from datetime import date
 
-from sqlalchemy import func, select
+from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
 from . import gamification, math_gen
 from .config import settings
 from .models import Child, DayChallenge, DayCompletion, ReadingSession, Redemption
+
+# Alfabeto sin caracteres ambiguos (sin I, O, 0, 1) para leerlo/dictarlo fácil.
+CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+CODE_LENGTH = 5
+
+
+def _random_code() -> str:
+    return "".join(secrets.choice(CODE_ALPHABET) for _ in range(CODE_LENGTH))
+
+
+def generate_unique_code(db: Session) -> str:
+    for _ in range(50):
+        code = _random_code()
+        if db.scalar(select(Child).where(Child.code == code)) is None:
+            return code
+    raise RuntimeError("No se pudo generar un código de explorador único")
+
+
+def get_child_by_code(db: Session, code: str) -> Child | None:
+    normalized = code.strip().upper()
+    if not normalized:
+        return None
+    return db.scalar(select(Child).where(Child.code == normalized))
+
+
+def backfill_child_codes(db: Session) -> None:
+    """Asigna un código a los exploradores que aún no tengan (migración suave)."""
+    pending = list(db.scalars(select(Child).where(or_(Child.code.is_(None), Child.code == ""))))
+    for child in pending:
+        child.code = generate_unique_code(db)
+    if pending:
+        db.commit()
 
 
 def get_or_create_child(
@@ -22,6 +55,7 @@ def get_or_create_child(
     child = Child(
         name=name or settings.child_name,
         avatar=avatar or "rex",
+        code=generate_unique_code(db),
     )
     db.add(child)
     db.commit()

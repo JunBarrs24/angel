@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import date, datetime
 
-from sqlalchemy import JSON, ForeignKey, Text, UniqueConstraint, func
+from sqlalchemy import JSON, ForeignKey, String, Text, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .database import Base
@@ -18,6 +18,9 @@ class Child(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(default="Ángel Eduardo")
     avatar: Mapped[str] = mapped_column(default="rex")
+    # Código de explorador: permite continuar la MISMA aventura en otro
+    # dispositivo (sin login). Se genera al crear el perfil.
+    code: Mapped[str | None] = mapped_column(String, unique=True, default=None)
     created_at: Mapped[datetime] = mapped_column(server_default=func.now())
 
 

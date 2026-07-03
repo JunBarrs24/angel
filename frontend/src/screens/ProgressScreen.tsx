@@ -1,8 +1,9 @@
 // Pantalla 4 — Progreso: estrellas totales, racha, medallas y avance global.
 
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { useProgress } from "../api/hooks";
+import { useChildProfile, useProgress } from "../api/hooks";
 import { ProgressBar } from "../components/ProgressBar";
 import { useChild } from "../hooks/useChild";
 
@@ -10,6 +11,7 @@ export function ProgressScreen() {
   const navigate = useNavigate();
   const { childId } = useChild();
   const { data, isLoading, isError } = useProgress(childId);
+  const { data: child } = useChildProfile(childId);
 
   if (childId == null) {
     navigate("/");
@@ -50,6 +52,8 @@ export function ProgressScreen() {
         </button>
         <h1 style={{ margin: 0 }}>🏅 Mis logros</h1>
       </header>
+
+      {child?.code && <ExplorerCode code={child.code} />}
 
       <div
         style={{
@@ -113,6 +117,60 @@ export function ProgressScreen() {
             </div>
           ))}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function ExplorerCode({ code }: { code: string }) {
+  const [copied, setCopied] = useState(false);
+
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Sin portapapeles (o sin permiso): el niño puede leer el código a la vista.
+    }
+  }
+
+  return (
+    <div
+      className="card"
+      style={{
+        marginBottom: 16,
+        display: "flex",
+        alignItems: "center",
+        gap: 14,
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+        background: "var(--crema)",
+      }}
+    >
+      <div style={{ textAlign: "left" }}>
+        <div style={{ fontWeight: 800 }}>🦖 Tu código de explorador</div>
+        <div className="texto-suave" style={{ fontSize: "0.9rem" }}>
+          Úsalo en otro dispositivo para jugar la misma aventura.
+        </div>
+      </div>
+      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <span
+          style={{
+            fontSize: "1.8rem",
+            fontWeight: 900,
+            letterSpacing: 4,
+            background: "#fff",
+            borderRadius: 12,
+            padding: "6px 16px",
+            boxShadow: "var(--sombra-suave)",
+          }}
+        >
+          {code}
+        </span>
+        <button type="button" className="btn btn--morado" onClick={copy}>
+          {copied ? "¡Copiado! ✓" : "Copiar"}
+        </button>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ export interface Child {
   id: number;
   name: string;
   avatar: string;
+  code: string | null;
 }
 
 export interface ChildCreate {

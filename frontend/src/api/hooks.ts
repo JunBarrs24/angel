@@ -16,6 +16,15 @@ export const queryKeys = {
   store: (childId: number) => ["store", childId] as const,
 };
 
+export function useChildProfile(childId: number | null) {
+  return useQuery({
+    queryKey: queryKeys.child(childId ?? 0),
+    queryFn: () => api.getChild(childId as number),
+    enabled: childId != null,
+    retry: false,
+  });
+}
+
 export function useMap(childId: number | null) {
   const asOf = useAsOf();
   return useQuery({

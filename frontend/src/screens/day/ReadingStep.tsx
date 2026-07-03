@@ -14,7 +14,6 @@ import type { ReadingState } from "../../api/types";
 import { OxygenGauge } from "../../components/OxygenGauge";
 import { StoryReader } from "../../components/StoryReader";
 import { formatClock } from "../../lib/time";
-import { splitWords } from "../../lib/words";
 
 interface ReadingStepProps {
   childId: number;
@@ -42,7 +41,6 @@ export function ReadingStep({
   initialReading,
   onFinish,
 }: ReadingStepProps) {
-  const totalWords = splitWords(story).length;
   const [phase, setPhase] = useState<"ready" | "reading">("ready");
   const [goalSeconds, setGoalSeconds] = useState(DEFAULT_GOAL);
   const [readCount, setReadCount] = useState(initialReading.last_word_index);
@@ -99,8 +97,8 @@ export function ReadingStep({
   }
 
   function finish() {
-    setReadCount(totalWords);
-    readRef.current = totalWords;
+    // Guardamos "terminado" sin tocar readCount: conservamos hasta dónde fue
+    // marcando el niño para que el repaso muestre su avance real.
     save({ finished: true });
     onFinish();
   }

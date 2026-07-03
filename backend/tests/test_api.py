@@ -156,9 +156,11 @@ def test_reading_guardar_y_retomar(client: TestClient) -> None:
     body = r2.json()
     assert body["seconds_elapsed"] == 20  # se mantuvo el mayor
     assert body["finished"] is True
-    # Al terminar, se completa hasta el total de palabras del día.
-    assert body["last_word_index"] == today["word_count"]
+    # Al terminar, words_read cuenta toda la historia (para estadísticas)...
     assert body["words_read"] == today["word_count"]
+    # ...pero last_word_index conserva hasta dónde fue tocando el niño (25),
+    # para que el repaso muestre su avance real y no siempre el 100%.
+    assert body["last_word_index"] == 25
 
 
 def test_answers_comprehension_feedback(client: TestClient) -> None:

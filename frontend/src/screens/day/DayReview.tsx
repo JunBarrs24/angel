@@ -9,6 +9,7 @@ import { api } from "../../api/client";
 import type { DayChallenge } from "../../api/types";
 import { StarRow } from "../../components/StarRow";
 import { StoryReader } from "../../components/StoryReader";
+import { formatClock } from "../../lib/time";
 
 const LETTERS = ["A", "B", "C", "D"];
 
@@ -69,9 +70,16 @@ export function DayReview({ childId, day }: DayReviewProps) {
       {/* ---- Lectura ---- */}
       <section className="card" style={{ marginTop: 20 }}>
         <h2 style={{ marginTop: 0 }}>📖 Lectura</h2>
+        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
+          <span className="pastilla">⏱️ {formatClock(day.reading.seconds_elapsed)} leyendo</span>
+          <span className="pastilla">
+            {day.reading.finished ? "✅ Terminó de leer" : "⏸️ No marcó terminado"}
+          </span>
+        </div>
         <p className="texto-suave" style={{ marginTop: 0 }}>
-          Leyó {day.reading.words_read} de {day.word_count} palabras
-          {day.reading.finished ? " · terminó la lectura ✅" : ""}. Lo leído está resaltado.
+          {day.reading.last_word_index > 0
+            ? "Mientras leía fue tocando las palabras hasta la parte resaltada."
+            : "No fue tocando palabras mientras leía (leyó de corrido)."}
         </p>
         <StoryReader story={day.story} readCount={day.reading.last_word_index} readOnly />
       </section>

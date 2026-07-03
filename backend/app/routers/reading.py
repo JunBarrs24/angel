@@ -23,8 +23,10 @@ def save_reading(payload: ReadingUpdateIn, db: Session = Depends(get_db)) -> Rea
     last_index = max(0, min(payload.last_word_index, challenge.word_count))
     words_read = max(payload.words_read, last_index)
     if payload.finished:
+        # Al terminar contamos toda la historia para las estadísticas, pero
+        # CONSERVAMOS last_word_index (hasta dónde fue tocando el niño) para que
+        # el repaso de un adulto muestre su avance real y no siempre el 100%.
         words_read = challenge.word_count
-        last_index = challenge.word_count
 
     session = services.get_reading_session(db, payload.child_id, challenge.id)
     if session is None:

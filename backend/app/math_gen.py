@@ -8,7 +8,20 @@ Tipos:
   - ``sub``     : a - b  (b <= a)  (respuesta numérica)
   - ``compare`` : a ? b            (respuesta "<", ">" o "=")
 
-Rampa de dificultad: los operandos crecen con el día, desde ~20 hasta 1000.
+Dificultad por tramos (bandas), pensada para no saturar a los peques:
+
+  Días 1-25  (fácil):
+    - suma:  un dígito + un dígito        (p. ej. 8 + 7)
+    - resta: hasta 2 dígitos − 1 dígito   (p. ej. 15 − 8, 8 − 6), nunca negativa
+    - comparar: números de hasta 2 dígitos
+  Días 26-35 (medio):
+    - suma:  resultado de hasta 2 dígitos (p. ej. 34 + 51)
+    - resta: 2 dígitos − hasta 2 dígitos  (p. ej. 45 − 28), nunca negativa
+    - comparar: números de hasta 2 dígitos
+  Días 36-40 (difícil):
+    - suma:  resultado de hasta 3 dígitos
+    - resta: hasta 3 dígitos, nunca negativa
+    - comparar: números de hasta 3 dígitos
 """
 
 from __future__ import annotations
@@ -17,9 +30,16 @@ import random
 from dataclasses import asdict, dataclass
 
 TOTAL_DAYS = 40
-FLOOR_MAX = 20
-CEIL_MAX = 1000
 PROBLEMS_PER_DAY = 8
+
+# Límites de cada banda de dificultad (por número de día).
+EASY_MAX_DAY = 25  # días 1..25
+MID_MAX_DAY = 35  # días 26..35 ; 36..40 = difícil
+
+# Techos de operandos según cantidad de dígitos.
+ONE_DIGIT_MAX = 9
+TWO_DIGIT_MAX = 99
+THREE_DIGIT_MAX = 999
 
 
 @dataclass(frozen=True)
@@ -39,24 +59,72 @@ class MathProblem:
         return data
 
 
+def _band(day_number: int) -> str:
+    """Devuelve la banda de dificultad ('easy' | 'mid' | 'hard') de un día."""
+    if day_number <= EASY_MAX_DAY:
+        return "easy"
+    if day_number <= MID_MAX_DAY:
+        return "mid"
+    return "hard"
+
+
 def difficulty_max(day_number: int) -> int:
-    """Máximo de los operandos para un día dado (rampa lineal de 20 a 1000)."""
-    if day_number <= 1:
-        return FLOOR_MAX
-    if day_number >= TOTAL_DAYS:
-        return CEIL_MAX
-    step = (CEIL_MAX - FLOOR_MAX) / (TOTAL_DAYS - 1)
-    return int(round(FLOOR_MAX + (day_number - 1) * step))
+    """Máximo de los operandos que verá el niño ese día (para info/DB ``math_max``).
+
+    Banda fácil/media -> 2 dígitos (99); banda difícil -> 3 dígitos (999).
+    """
+    return TWO_DIGIT_MAX if _band(day_number) in ("easy", "mid") else THREE_DIGIT_MAX
 
 
 def _seed(day_number: int) -> random.Random:
     return random.Random(day_number * 1000 + 7)
 
 
+def _make_sum(rng: random.Random, band: str) -> tuple[int, int]:
+    """Operandos de una suma según la banda. La suma nunca pasa del techo de dígitos."""
+    if band == "easy":
+        # Un dígito + un dígito (el resultado puede llegar a 2 dígitos: 8 + 7 = 15).
+        return rng.randint(1, ONE_DIGIT_MAX), rng.randint(1, ONE_DIGIT_MAX)
+    cap = TWO_DIGIT_MAX if band == "mid" else THREE_DIGIT_MAX
+    # Elegir a y luego b dejando sitio, para que a + b nunca pase el techo.
+    a = rng.randint(1, cap - 1)
+    b = rng.randint(1, cap - a)
+    return a, b
+
+
+def _make_sub(rng: random.Random, band: str) -> tuple[int, int]:
+    """Operandos de una resta (b <= a, nunca negativa) según la banda."""
+    if band == "easy":
+        # Hasta 2 dígitos menos 1 dígito: 15 - 8, 8 - 6.
+        a = rng.randint(1, TWO_DIGIT_MAX)
+        b = rng.randint(1, min(ONE_DIGIT_MAX, a))
+        return a, b
+    if band == "mid":
+        # 2 dígitos menos hasta 2 dígitos: 45 - 28.
+        a = rng.randint(10, TWO_DIGIT_MAX)
+        b = rng.randint(1, a)
+        return a, b
+    # Difícil: hasta 3 dígitos.
+    a = rng.randint(10, THREE_DIGIT_MAX)
+    b = rng.randint(1, a)
+    return a, b
+
+
+def _make_compare(rng: random.Random, band: str) -> tuple[int, int]:
+    """Operandos de una comparación según la banda."""
+    top = TWO_DIGIT_MAX if band in ("easy", "mid") else THREE_DIGIT_MAX
+    a = rng.randint(1, top)
+    b = rng.randint(1, top)
+    # De vez en cuando forzar igualdad para que aparezca "=".
+    if rng.random() < 0.15:
+        b = a
+    return a, b
+
+
 def generate(day_number: int, count: int = PROBLEMS_PER_DAY) -> list[MathProblem]:
     """Genera de forma determinista la lista de ejercicios de un día."""
     rng = _seed(day_number)
-    top = difficulty_max(day_number)
+    band = _band(day_number)
     problems: list[MathProblem] = []
 
     # Patrón de tipos: mezcla de sumas, restas y comparaciones.
@@ -64,9 +132,7 @@ def generate(day_number: int, count: int = PROBLEMS_PER_DAY) -> list[MathProblem
     for i in range(count):
         kind = pattern[i % len(pattern)]
         if kind == "sum":
-            # Elegir a y luego b dejando sitio, para que a + b nunca pase el techo.
-            a = rng.randint(1, max(1, top - 1))
-            b = rng.randint(1, top - a)
+            a, b = _make_sum(rng, band)
             problems.append(
                 MathProblem(
                     id=f"{day_number}-{i}",
@@ -79,8 +145,7 @@ def generate(day_number: int, count: int = PROBLEMS_PER_DAY) -> list[MathProblem
                 )
             )
         elif kind == "sub":
-            a = rng.randint(2, top)
-            b = rng.randint(1, a)
+            a, b = _make_sub(rng, band)
             problems.append(
                 MathProblem(
                     id=f"{day_number}-{i}",
@@ -93,11 +158,7 @@ def generate(day_number: int, count: int = PROBLEMS_PER_DAY) -> list[MathProblem
                 )
             )
         else:  # compare
-            a = rng.randint(1, top)
-            b = rng.randint(1, top)
-            # De vez en cuando forzar igualdad para que aparezca "=".
-            if rng.random() < 0.15:
-                b = a
+            a, b = _make_compare(rng, band)
             answer = "=" if a == b else (">" if a > b else "<")
             problems.append(
                 MathProblem(

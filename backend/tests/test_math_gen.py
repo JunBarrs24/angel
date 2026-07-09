@@ -19,9 +19,14 @@ def test_dias_distintos_dan_ejercicios_distintos() -> None:
     assert math_gen.generate(1) != math_gen.generate(2)
 
 
-def test_rampa_extremos() -> None:
-    assert math_gen.difficulty_max(1) == 20
-    assert math_gen.difficulty_max(40) == 1000
+def test_bandas_extremos() -> None:
+    # Fácil y media -> 2 dígitos (99); difícil -> 3 dígitos (999).
+    assert math_gen.difficulty_max(1) == 99
+    assert math_gen.difficulty_max(25) == 99
+    assert math_gen.difficulty_max(26) == 99
+    assert math_gen.difficulty_max(35) == 99
+    assert math_gen.difficulty_max(36) == 999
+    assert math_gen.difficulty_max(40) == 999
 
 
 def test_rampa_monotona_no_decreciente() -> None:
@@ -33,9 +38,47 @@ def test_rampa_monotona_no_decreciente() -> None:
 
 
 def test_dias_fuera_de_rango_se_saturan() -> None:
-    assert math_gen.difficulty_max(0) == 20
-    assert math_gen.difficulty_max(-5) == 20
-    assert math_gen.difficulty_max(100) == 1000
+    assert math_gen.difficulty_max(0) == 99
+    assert math_gen.difficulty_max(-5) == 99
+    assert math_gen.difficulty_max(100) == 999
+
+
+@pytest.mark.parametrize("day", list(range(1, 26)))
+def test_banda_facil_restas_2dig_menos_1dig(day: int) -> None:
+    """Días 1-25: restas con minuendo <=2 dígitos y sustraendo de 1 dígito."""
+    for p in math_gen.generate(day):
+        if p.kind == "sub":
+            assert 1 <= p.a <= 99, f"Día {day}: minuendo fuera de rango {p.a}"
+            assert 1 <= p.b <= 9, f"Día {day}: sustraendo no es de 1 dígito {p.b}"
+            assert p.b <= p.a
+
+
+@pytest.mark.parametrize("day", list(range(1, 26)))
+def test_banda_facil_sumas_un_digito(day: int) -> None:
+    """Días 1-25: sumas de un dígito + un dígito."""
+    for p in math_gen.generate(day):
+        if p.kind == "sum":
+            assert 1 <= p.a <= 9 and 1 <= p.b <= 9, f"Día {day}: suma {p.a}+{p.b}"
+
+
+@pytest.mark.parametrize("day", list(range(26, 36)))
+def test_banda_media_dos_digitos(day: int) -> None:
+    """Días 26-35: sumas de resultado <=2 dígitos y restas 2 dígitos - hasta 2 dígitos."""
+    for p in math_gen.generate(day):
+        if p.kind == "sum":
+            assert p.a + p.b <= 99, f"Día {day}: suma {p.a}+{p.b} pasa de 2 dígitos"
+        elif p.kind == "sub":
+            assert 10 <= p.a <= 99, f"Día {day}: minuendo no es de 2 dígitos {p.a}"
+            assert p.b <= p.a
+
+
+@pytest.mark.parametrize("day", list(range(36, 41)))
+def test_banda_dificil_tres_digitos(day: int) -> None:
+    """Días 36-40: hasta 3 dígitos."""
+    for p in math_gen.generate(day):
+        assert 1 <= p.a <= 999 and 1 <= p.b <= 999
+        if p.kind == "sum":
+            assert p.a + p.b <= 999
 
 
 @pytest.mark.parametrize("day", list(range(1, 41)))
